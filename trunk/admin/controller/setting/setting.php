@@ -540,7 +540,7 @@ class ControllerSettingSetting extends Controller {
 			$data['config_comment'] = $this->config->get('config_comment');
 		}
 
-		$this->load->model('localisation/location');
+		/*$this->load->model('localisation/location');
 
 		$data['locations'] = $this->model_localisation_location->getLocations();
 
@@ -550,7 +550,7 @@ class ControllerSettingSetting extends Controller {
 			$data['config_location'] = $this->config->get('config_location');
 		} else {
 			$data['config_location'] = array();
-		}
+		}*/
 
 		if (isset($this->request->post['config_meta_title'])) {
 			$data['config_meta_title'] = $this->request->post['config_meta_title'];
@@ -576,10 +576,10 @@ class ControllerSettingSetting extends Controller {
 			$data['config_layout_id'] = $this->config->get('config_layout_id');
 		}
 
-		$this->load->model('design/layout');
+		/*$this->load->model('design/layout');
 
 		$data['layouts'] = $this->model_design_layout->getLayouts();
-
+    */
 		if (isset($this->request->post['config_template'])) {
 			$data['config_template'] = $this->request->post['config_template'];
 		} else {
@@ -625,8 +625,14 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_admin_language'] = $this->config->get('config_admin_language');
 		}
-
-		if (isset($this->request->post['config_currency'])) {
+        
+        
+        if (isset($this->request->post['config_currency_auto'])) {
+			$data['config_currency_auto'] = $this->request->post['config_currency_auto'];
+		} else {
+			$data['config_currency_auto'] = $this->config->get('config_currency_auto');
+		}
+		/*if (isset($this->request->post['config_currency'])) {
 			$data['config_currency'] = $this->request->post['config_currency'];
 		} else {
 			$data['config_currency'] = $this->config->get('config_currency');
@@ -660,7 +666,7 @@ class ControllerSettingSetting extends Controller {
 
 		$this->load->model('localisation/weight_class');
 
-		$data['weight_classes'] = $this->model_localisation_weight_class->getWeightClasses();
+		$data['weight_classes'] = $this->model_localisation_weight_class->getWeightClasses();*/
 
 		if (isset($this->request->post['config_product_limit'])) {
 			$data['config_product_limit'] = $this->request->post['config_product_limit'];
@@ -846,9 +852,9 @@ class ControllerSettingSetting extends Controller {
 			$data['config_complete_status'] = array();
 		}
 
-		$this->load->model('localisation/order_status');
+		/*$this->load->model('localisation/order_status');
 
-		$data['order_statuses'] = $this->model_localisation_order_status->getOrderStatuses();
+		$data['order_statuses'] = $this->model_localisation_order_status->getOrderStatuses();*/
 
 		if (isset($this->request->post['config_order_mail'])) {
 			$data['config_order_mail'] = $this->request->post['config_order_mail'];
@@ -918,7 +924,7 @@ class ControllerSettingSetting extends Controller {
 			$data['config_return_id'] = $this->config->get('config_return_id');
 		}
 
-		if (isset($this->request->post['config_return_status_id'])) {
+		/*if (isset($this->request->post['config_return_status_id'])) {
 			$data['config_return_status_id'] = $this->request->post['config_return_status_id'];
 		} else {
 			$data['config_return_status_id'] = $this->config->get('config_return_status_id');
@@ -926,7 +932,7 @@ class ControllerSettingSetting extends Controller {
 
 		$this->load->model('localisation/return_status');
 
-		$data['return_statuses'] = $this->model_localisation_return_status->getReturnStatuses();
+		$data['return_statuses'] = $this->model_localisation_return_status->getReturnStatuses();*/
 
 		if (isset($this->request->post['config_logo'])) {
 			$data['config_logo'] = $this->request->post['config_logo'];
@@ -1435,7 +1441,6 @@ class ControllerSettingSetting extends Controller {
 		$country_info = $this->model_localisation_country->getCountry($this->request->get['country_id']);
 
 		if ($country_info) {
-			$this->load->model('localisation/zone');
 
 			$json = array(
 				'country_id'        => $country_info['country_id'],
@@ -1444,7 +1449,6 @@ class ControllerSettingSetting extends Controller {
 				'iso_code_3'        => $country_info['iso_code_3'],
 				'address_format'    => $country_info['address_format'],
 				'postcode_required' => $country_info['postcode_required'],
-				'zone'              => $this->model_localisation_zone->getZonesByCountryId($this->request->get['country_id']),
 				'status'            => $country_info['status']
 			);
 		}

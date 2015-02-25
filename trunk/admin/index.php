@@ -127,19 +127,19 @@ $registry->set('language', $language);
 $registry->set('document', new Document());
 
 // Currency
-$registry->set('currency', new Currency($registry));
+//$registry->set('currency', new Currency($registry));
 
 // Weight
-$registry->set('weight', new Weight($registry));
+//$registry->set('weight', new Weight($registry));
 
 // Length
-$registry->set('length', new Length($registry));
+//$registry->set('length', new Length($registry));
 
 // User
 $registry->set('user', new User($registry));
 
 //OpenBay Pro
-$registry->set('openbay', new Openbay($registry));
+//$registry->set('openbay', new Openbay($registry));
 
 // Event
 $event = new Event($registry);
