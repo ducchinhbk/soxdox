@@ -350,7 +350,7 @@ class ControllerCatalogProduct extends Controller {
 				$image = $this->model_tool_image->resize('no_image.png', 40, 40);
 			}
 
-			$special = false;
+			/*$special = false;
 
 			$product_specials = $this->model_catalog_product->getProductSpecials($result['product_id']);
 
@@ -360,7 +360,7 @@ class ControllerCatalogProduct extends Controller {
 
 					break;
 				}
-			}
+			}*/
 
 			$data['products'][] = array(
 				'product_id' => $result['product_id'],
@@ -368,7 +368,7 @@ class ControllerCatalogProduct extends Controller {
 				'name'       => $result['name'],
 				'model'      => $result['model'],
 				'price'      => $result['price'],
-				'special'    => $special,
+				'special'    => '',
 				'quantity'   => $result['quantity'],
 				'status'     => ($result['status']) ? $this->language->get('text_enabled') : $this->language->get('text_disabled'),
 				'edit'       => $this->url->link('catalog/product/edit', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
@@ -862,7 +862,7 @@ class ControllerCatalogProduct extends Controller {
 		}
 
 
-		$this->load->model('localisation/tax_class');
+		/*$this->load->model('localisation/tax_class');
 
 		$data['tax_classes'] = $this->model_localisation_tax_class->getTaxClasses();
 
@@ -872,7 +872,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['tax_class_id'] = $product_info['tax_class_id'];
 		} else {
 			$data['tax_class_id'] = 0;
-		}
+		}*/
 
 		if (isset($this->request->post['date_available'])) {
 			$data['date_available'] = $this->request->post['date_available'];
@@ -914,7 +914,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['sort_order'] = 1;
 		}
 
-		$this->load->model('localisation/stock_status');
+		/*$this->load->model('localisation/stock_status');
 
 		$data['stock_statuses'] = $this->model_localisation_stock_status->getStockStatuses();
 
@@ -924,7 +924,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['stock_status_id'] = $product_info['stock_status_id'];
 		} else {
 			$data['stock_status_id'] = 0;
-		}
+		}*/
 
 		if (isset($this->request->post['status'])) {
 			$data['status'] = $this->request->post['status'];
@@ -942,7 +942,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['weight'] = '';
 		}
 
-		$this->load->model('localisation/weight_class');
+		/*$this->load->model('localisation/weight_class');
 
 		$data['weight_classes'] = $this->model_localisation_weight_class->getWeightClasses();
 
@@ -952,7 +952,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['weight_class_id'] = $product_info['weight_class_id'];
 		} else {
 			$data['weight_class_id'] = $this->config->get('config_weight_class_id');
-		}
+		}*/
 
 		if (isset($this->request->post['length'])) {
 			$data['length'] = $this->request->post['length'];
@@ -978,7 +978,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['height'] = '';
 		}
 
-		$this->load->model('localisation/length_class');
+		/*$this->load->model('localisation/length_class');
 
 		$data['length_classes'] = $this->model_localisation_length_class->getLengthClasses();
 
@@ -988,7 +988,7 @@ class ControllerCatalogProduct extends Controller {
 			$data['length_class_id'] = $product_info['length_class_id'];
 		} else {
 			$data['length_class_id'] = $this->config->get('config_length_class_id');
-		}
+		}*/
 
 	
 
