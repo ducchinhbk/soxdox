@@ -409,7 +409,7 @@ class ControllerCatalogCategory extends Controller {
 			$data['parent_id'] = 0;
 		}
 
-		$this->load->model('catalog/filter');
+	/*	$this->load->model('catalog/filter');
 
 		if (isset($this->request->post['category_filter'])) {
 			$filters = $this->request->post['category_filter'];
@@ -430,7 +430,7 @@ class ControllerCatalogCategory extends Controller {
 					'name'      => $filter_info['group'] . ' &gt; ' . $filter_info['name']
 				);
 			}
-		}
+		}*/
 
 		$this->load->model('setting/store');
 
@@ -512,9 +512,7 @@ class ControllerCatalogCategory extends Controller {
 			$data['category_layout'] = array();
 		}
 
-		$this->load->model('design/layout');
-
-		$data['layouts'] = $this->model_design_layout->getLayouts();
+	
 
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
