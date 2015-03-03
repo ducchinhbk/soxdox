@@ -296,7 +296,7 @@ class ControllerCatalogCategory extends Controller {
 		$data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
 		$data['entry_keyword'] = $this->language->get('entry_keyword');
 		$data['entry_parent'] = $this->language->get('entry_parent');
-		$data['entry_filter'] = $this->language->get('entry_filter');
+		//$data['entry_filter'] = $this->language->get('entry_filter');
 		$data['entry_store'] = $this->language->get('entry_store');
 		$data['entry_image'] = $this->language->get('entry_image');
 		$data['entry_top'] = $this->language->get('entry_top');
@@ -305,7 +305,7 @@ class ControllerCatalogCategory extends Controller {
 		$data['entry_status'] = $this->language->get('entry_status');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 
-		$data['help_filter'] = $this->language->get('help_filter');
+		//$data['help_filter'] = $this->language->get('help_filter');
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_top'] = $this->language->get('help_top');
 		$data['help_column'] = $this->language->get('help_column');
@@ -315,7 +315,6 @@ class ControllerCatalogCategory extends Controller {
 
 		$data['tab_general'] = $this->language->get('tab_general');
 		$data['tab_data'] = $this->language->get('tab_data');
-		$data['tab_design'] = $this->language->get('tab_design');
 
 		if (isset($this->error['warning'])) {
 			$data['error_warning'] = $this->error['warning'];
@@ -430,7 +429,7 @@ class ControllerCatalogCategory extends Controller {
 					'name'      => $filter_info['group'] . ' &gt; ' . $filter_info['name']
 				);
 			}
-		}*/
+		}
 
 		$this->load->model('setting/store');
 
@@ -442,7 +441,7 @@ class ControllerCatalogCategory extends Controller {
 			$data['category_store'] = $this->model_catalog_category->getCategoryStores($this->request->get['category_id']);
 		} else {
 			$data['category_store'] = array(0);
-		}
+		}*/
 
 		if (isset($this->request->post['keyword'])) {
 			$data['keyword'] = $this->request->post['keyword'];
@@ -504,13 +503,13 @@ class ControllerCatalogCategory extends Controller {
 			$data['status'] = true;
 		}
 
-		if (isset($this->request->post['category_layout'])) {
+		/*if (isset($this->request->post['category_layout'])) {
 			$data['category_layout'] = $this->request->post['category_layout'];
 		} elseif (isset($this->request->get['category_id'])) {
 			$data['category_layout'] = $this->model_catalog_category->getCategoryLayouts($this->request->get['category_id']);
 		} else {
 			$data['category_layout'] = array();
-		}
+		}*/
 
 	
 
