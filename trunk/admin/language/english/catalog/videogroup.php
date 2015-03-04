@@ -1,21 +1,21 @@
 <?php
 // Heading
-$_['heading_title']          = 'Categories';
+$_['heading_title']          = 'Video groups';
 
 // Text
 $_['text_success']           = 'Success: You have modified categories!';
-$_['text_list']              = 'Category List';
-$_['text_add']               = 'Add Category';
-$_['text_edit']              = 'Edit Category';
+$_['text_list']              = 'Video Group List';
+$_['text_add']               = 'Add Video Group';
+$_['text_edit']              = 'Edit Video Group';
 $_['text_default']           = 'Default';
 
 // Column
-$_['column_name']            = 'Category Name';
+$_['column_name']            = 'Video Group Name';
 $_['column_sort_order']      = 'Sort Order';
 $_['column_action']          = 'Action';
 
 // Entry
-$_['entry_name']             = 'Category Name';
+$_['entry_name']             = 'Video Group Name';
 $_['entry_description']      = 'Description';
 $_['entry_meta_title'] 	     = 'Meta Tag Title';
 $_['entry_meta_keyword'] 	 = 'Meta Tag Keywords';
