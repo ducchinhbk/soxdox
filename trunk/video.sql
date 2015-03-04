@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 03, 2015 at 04:17 AM
+-- Generation Time: Mar 04, 2015 at 08:14 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1542,6 +1542,18 @@ INSERT INTO `product_to_store` (`product_id`, `store_id`) VALUES
 (47, 0),
 (48, 0),
 (49, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_to_videogroup`
+--
+
+CREATE TABLE IF NOT EXISTS `product_to_videogroup` (
+  `product_id` int(11) NOT NULL,
+  `videogroup_id` int(11) NOT NULL,
+  PRIMARY KEY (`product_id`,`videogroup_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
