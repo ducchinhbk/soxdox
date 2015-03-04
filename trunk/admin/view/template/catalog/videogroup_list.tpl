@@ -49,17 +49,17 @@
                 </tr>
               </thead>
               <tbody>
-                <?php if ($categories) { ?>
-                <?php foreach ($categories as $category) { ?>
+                <?php if ($videogroups) { ?>
+                <?php foreach ($videogroups as $videogroup) { ?>
                 <tr>
-                  <td class="text-center"><?php if (in_array($category['category_id'], $selected)) { ?>
-                    <input type="checkbox" name="selected[]" value="<?php echo $category['category_id']; ?>" checked="checked" />
+                  <td class="text-center"><?php if (in_array($videogroup['videogroup_id'], $selected)) { ?>
+                    <input type="checkbox" name="selected[]" value="<?php echo $videogroup['videogroup_id']; ?>" checked="checked" />
                     <?php } else { ?>
-                    <input type="checkbox" name="selected[]" value="<?php echo $category['category_id']; ?>" />
+                    <input type="checkbox" name="selected[]" value="<?php echo $videogroup['videogroup_id']; ?>" />
                     <?php } ?></td>
-                  <td class="text-left"><?php echo $category['name']; ?></td>
-                  <td class="text-right"><?php echo $category['sort_order']; ?></td>
-                  <td class="text-right"><a href="<?php echo $category['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+                  <td class="text-left"><?php echo $videogroup['name']; ?></td>
+                  <td class="text-right"><?php echo $videogroup['sort_order']; ?></td>
+                  <td class="text-right"><a href="<?php echo $videogroup['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
                 </tr>
                 <?php } ?>
                 <?php } else { ?>
