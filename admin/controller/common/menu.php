@@ -30,6 +30,7 @@ class ControllerCommonMenu extends Controller {
 		$data['text_opencart'] = $this->language->get('text_opencart');
 		$data['text_payment'] = $this->language->get('text_payment');
 		$data['text_product'] = $this->language->get('text_product');
+        $data['text_videogroup'] = $this->language->get('text_videogroup');
 		$data['text_reports'] = $this->language->get('text_reports');
 		$data['text_report_sale_order'] = $this->language->get('text_report_sale_order');
 		$data['text_report_sale_tax'] = $this->language->get('text_report_sale_tax');
@@ -66,7 +67,7 @@ class ControllerCommonMenu extends Controller {
         $data['information'] = $this->url->link('catalog/information', 'token=' . $this->session->data['token'], 'SSL');
         $data['review'] = $this->url->link('catalog/review', 'token=' . $this->session->data['token'], 'SSL');
         $data['product'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'], 'SSL');
-        
+        $data['videogroup'] = $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'], 'SSL');
 		$data['api'] = $this->url->link('user/api', 'token=' . $this->session->data['token'], 'SSL');
 	
 		
