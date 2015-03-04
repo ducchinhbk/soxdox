@@ -1,26 +1,26 @@
 <?php
-class ControllerCatalogCategory extends Controller {
+class ControllerCatalogVideogroup extends Controller {
 	private $error = array();
 
 	public function index() {
-		$this->load->language('catalog/category');
+		$this->load->language('catalog/videogroup');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/category');
+		$this->load->model('catalog/videogroup');
 
 		$this->getList();
 	}
 
 	public function add() {
-		$this->load->language('catalog/category');
+		$this->load->language('catalog/videogroup');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/category');
+		$this->load->model('catalog/videogroup');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_catalog_category->addCategory($this->request->post);
+			$this->model_catalog_videogroup->addVideogroup($this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -38,21 +38,21 @@ class ControllerCatalogCategory extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+			$this->response->redirect($this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 		}
 
 		$this->getForm();
 	}
 
 	public function edit() {
-		$this->load->language('catalog/category');
+		$this->load->language('catalog/videogroup');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/category');
+		$this->load->model('catalog/videogroup');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_catalog_category->editCategory($this->request->get['category_id'], $this->request->post);
+			$this->model_catalog_videogroup->editVideogroup($this->request->get['videogroup_id'], $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -70,22 +70,22 @@ class ControllerCatalogCategory extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+			$this->response->redirect($this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 		}
 
 		$this->getForm();
 	}
 
 	public function delete() {
-		$this->load->language('catalog/category');
+		$this->load->language('catalog/videogroup');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/category');
+		$this->load->model('catalog/videogroup');
 
 		if (isset($this->request->post['selected']) && $this->validateDelete()) {
-			foreach ($this->request->post['selected'] as $category_id) {
-				$this->model_catalog_category->deleteCategory($category_id);
+			foreach ($this->request->post['selected'] as $videogroup_id) {
+				$this->model_catalog_videogroup->deleteVideogroup($videogroup_id);
 			}
 
 			$this->session->data['success'] = $this->language->get('text_success');
@@ -104,25 +104,25 @@ class ControllerCatalogCategory extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+			$this->response->redirect($this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL'));
 		}
 
 		$this->getList();
 	}
 
 	public function repair() {
-		$this->load->language('catalog/category');
+		$this->load->language('catalog/videogroup');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/category');
+		$this->load->model('catalog/videogroup');
 
 		if ($this->validateRepair()) {
-			$this->model_catalog_category->repairCategories();
+			$this->model_catalog_videogroup->repairVideogroups();
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
-			$this->response->redirect($this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL'));
+			$this->response->redirect($this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'], 'SSL'));
 		}
 
 		$this->getList();
@@ -170,14 +170,14 @@ class ControllerCatalogCategory extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL')
+			'href' => $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL')
 		);
 		
-		$data['add'] = $this->url->link('catalog/category/add', 'token=' . $this->session->data['token'] . $url, 'SSL');
-		$data['delete'] = $this->url->link('catalog/category/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
-		$data['repair'] = $this->url->link('catalog/category/repair', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$data['add'] = $this->url->link('catalog/videogroup/add', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$data['delete'] = $this->url->link('catalog/videogroup/delete', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$data['repair'] = $this->url->link('catalog/videogroup/repair', 'token=' . $this->session->data['token'] . $url, 'SSL');
 
-		$data['categories'] = array();
+		$data['videogroups'] = array();
 
 		$filter_data = array(
 			'sort'  => $sort,
@@ -186,17 +186,17 @@ class ControllerCatalogCategory extends Controller {
 			'limit' => $this->config->get('config_limit_admin')
 		);
 
-		$category_total = $this->model_catalog_category->getTotalCategories();
+		$category_total = $this->model_catalog_videogroup->getTotalVideogroups();
 
-		$results = $this->model_catalog_category->getCategories($filter_data);
+		$results = $this->model_catalog_videogroup->getVideogroups($filter_data);
 
 		foreach ($results as $result) {
-			$data['categories'][] = array(
-				'category_id' => $result['category_id'],
+			$data['videogroups'][] = array(
+				'videogroup_id' => $result['videogroup_id'],
 				'name'        => $result['name'],
 				'sort_order'  => $result['sort_order'],
-				'edit'        => $this->url->link('catalog/category/edit', 'token=' . $this->session->data['token'] . '&category_id=' . $result['category_id'] . $url, 'SSL'),
-				'delete'      => $this->url->link('catalog/category/delete', 'token=' . $this->session->data['token'] . '&category_id=' . $result['category_id'] . $url, 'SSL')
+				'edit'        => $this->url->link('catalog/videogroup/edit', 'token=' . $this->session->data['token'] . '&videogroup_id=' . $result['videogroup_id'] . $url, 'SSL'),
+				'delete'      => $this->url->link('catalog/videogroup/delete', 'token=' . $this->session->data['token'] . '&videogroup_id=' . $result['videogroup_id'] . $url, 'SSL')
 			);
 		}
 
@@ -247,8 +247,8 @@ class ControllerCatalogCategory extends Controller {
 			$url .= '&page=' . $this->request->get['page'];
 		}
 
-		$data['sort_name'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . '&sort=name' . $url, 'SSL');
-		$data['sort_sort_order'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . '&sort=sort_order' . $url, 'SSL');
+		$data['sort_name'] = $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . '&sort=name' . $url, 'SSL');
+		$data['sort_sort_order'] = $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . '&sort=sort_order' . $url, 'SSL');
 
 		$url = '';
 
@@ -264,7 +264,7 @@ class ControllerCatalogCategory extends Controller {
 		$pagination->total = $category_total;
 		$pagination->page = $page;
 		$pagination->limit = $this->config->get('config_limit_admin');
-		$pagination->url = $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url . '&page={page}', 'SSL');
+		$pagination->url = $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url . '&page={page}', 'SSL');
 
 		$data['pagination'] = $pagination->render();
 
@@ -277,7 +277,7 @@ class ControllerCatalogCategory extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('catalog/category_list.tpl', $data));
+		$this->response->setOutput($this->load->view('catalog/videogroup_list.tpl', $data));
 	}
 
 	protected function getForm() {
@@ -363,19 +363,19 @@ class ControllerCatalogCategory extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL')
+			'href' => $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL')
 		);
 		
-		if (!isset($this->request->get['category_id'])) {
-			$data['action'] = $this->url->link('catalog/category/add', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		if (!isset($this->request->get['videogroup_id'])) {
+			$data['action'] = $this->url->link('catalog/videogroup/add', 'token=' . $this->session->data['token'] . $url, 'SSL');
 		} else {
-			$data['action'] = $this->url->link('catalog/category/edit', 'token=' . $this->session->data['token'] . '&category_id=' . $this->request->get['category_id'] . $url, 'SSL');
+			$data['action'] = $this->url->link('catalog/videogroup/edit', 'token=' . $this->session->data['token'] . '&videogroup_id=' . $this->request->get['videogroup_id'] . $url, 'SSL');
 		}
 
-		$data['cancel'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'] . $url, 'SSL');
+		$data['cancel'] = $this->url->link('catalog/videogroup', 'token=' . $this->session->data['token'] . $url, 'SSL');
 
-		if (isset($this->request->get['category_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
-			$category_info = $this->model_catalog_category->getCategory($this->request->get['category_id']);
+		if (isset($this->request->get['videogroup_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
+			$videogroup_info = $this->model_catalog_videogroup->getVideogroup($this->request->get['videogroup_id']);
 		}
 
 		$data['token'] = $this->session->data['token'];
@@ -387,74 +387,40 @@ class ControllerCatalogCategory extends Controller {
 		if (isset($this->request->post['category_description'])) {
 			$data['category_description'] = $this->request->post['category_description'];
 		} elseif (isset($this->request->get['category_id'])) {
-			$data['category_description'] = $this->model_catalog_category->getCategoryDescriptions($this->request->get['category_id']);
+			$data['category_description'] = $this->model_catalog_videogroup->getVideogroupDescriptions($this->request->get['videogroup_id']);
 		} else {
 			$data['category_description'] = array();
 		}
 
 		if (isset($this->request->post['path'])) {
 			$data['path'] = $this->request->post['path'];
-		} elseif (!empty($category_info)) {
-			$data['path'] = $category_info['path'];
+		} elseif (!empty($videogroup_info)) {
+			$data['path'] = $videogroup_info['path'];
 		} else {
 			$data['path'] = '';
 		}
 
 		if (isset($this->request->post['parent_id'])) {
 			$data['parent_id'] = $this->request->post['parent_id'];
-		} elseif (!empty($category_info)) {
-			$data['parent_id'] = $category_info['parent_id'];
+		} elseif (!empty($videogroup_info)) {
+			$data['parent_id'] = $videogroup_info['parent_id'];
 		} else {
 			$data['parent_id'] = 0;
 		}
 
-	/*	$this->load->model('catalog/filter');
-
-		if (isset($this->request->post['category_filter'])) {
-			$filters = $this->request->post['category_filter'];
-		} elseif (isset($this->request->get['category_id'])) {
-			$filters = $this->model_catalog_category->getCategoryFilters($this->request->get['category_id']);
-		} else {
-			$filters = array();
-		}
-
-		$data['category_filters'] = array();
-
-		foreach ($filters as $filter_id) {
-			$filter_info = $this->model_catalog_filter->getFilter($filter_id);
-
-			if ($filter_info) {
-				$data['category_filters'][] = array(
-					'filter_id' => $filter_info['filter_id'],
-					'name'      => $filter_info['group'] . ' &gt; ' . $filter_info['name']
-				);
-			}
-		}
-
-		$this->load->model('setting/store');
-
-		$data['stores'] = $this->model_setting_store->getStores();
-
-		if (isset($this->request->post['category_store'])) {
-			$data['category_store'] = $this->request->post['category_store'];
-		} elseif (isset($this->request->get['category_id'])) {
-			$data['category_store'] = $this->model_catalog_category->getCategoryStores($this->request->get['category_id']);
-		} else {
-			$data['category_store'] = array(0);
-		}*/
 
 		if (isset($this->request->post['keyword'])) {
 			$data['keyword'] = $this->request->post['keyword'];
-		} elseif (!empty($category_info)) {
-			$data['keyword'] = $category_info['keyword'];
+		} elseif (!empty($videogroup_info)) {
+			$data['keyword'] = $videogroup_info['keyword'];
 		} else {
 			$data['keyword'] = '';
 		}
 
 		if (isset($this->request->post['image'])) {
 			$data['image'] = $this->request->post['image'];
-		} elseif (!empty($category_info)) {
-			$data['image'] = $category_info['image'];
+		} elseif (!empty($videogroup_info)) {
+			$data['image'] = $videogroup_info['image'];
 		} else {
 			$data['image'] = '';
 		}
@@ -463,8 +429,8 @@ class ControllerCatalogCategory extends Controller {
 
 		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
 			$data['thumb'] = $this->model_tool_image->resize($this->request->post['image'], 100, 100);
-		} elseif (!empty($category_info) && is_file(DIR_IMAGE . $category_info['image'])) {
-			$data['thumb'] = $this->model_tool_image->resize($category_info['image'], 100, 100);
+		} elseif (!empty($videogroup_info) && is_file(DIR_IMAGE . $videogroup_info['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($videogroup_info['image'], 100, 100);
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
@@ -473,43 +439,35 @@ class ControllerCatalogCategory extends Controller {
 
 		if (isset($this->request->post['top'])) {
 			$data['top'] = $this->request->post['top'];
-		} elseif (!empty($category_info)) {
-			$data['top'] = $category_info['top'];
+		} elseif (!empty($videogroup_info)) {
+			$data['top'] = $videogroup_info['top'];
 		} else {
 			$data['top'] = 0;
 		}
 
 		if (isset($this->request->post['column'])) {
 			$data['column'] = $this->request->post['column'];
-		} elseif (!empty($category_info)) {
-			$data['column'] = $category_info['column'];
+		} elseif (!empty($videogroup_info)) {
+			$data['column'] = $videogroup_info['column'];
 		} else {
 			$data['column'] = 1;
 		}
 
 		if (isset($this->request->post['sort_order'])) {
 			$data['sort_order'] = $this->request->post['sort_order'];
-		} elseif (!empty($category_info)) {
-			$data['sort_order'] = $category_info['sort_order'];
+		} elseif (!empty($videogroup_info)) {
+			$data['sort_order'] = $videogroup_info['sort_order'];
 		} else {
 			$data['sort_order'] = 0;
 		}
 
 		if (isset($this->request->post['status'])) {
 			$data['status'] = $this->request->post['status'];
-		} elseif (!empty($category_info)) {
-			$data['status'] = $category_info['status'];
+		} elseif (!empty($videogroup_info)) {
+			$data['status'] = $videogroup_info['status'];
 		} else {
 			$data['status'] = true;
 		}
-
-		/*if (isset($this->request->post['category_layout'])) {
-			$data['category_layout'] = $this->request->post['category_layout'];
-		} elseif (isset($this->request->get['category_id'])) {
-			$data['category_layout'] = $this->model_catalog_category->getCategoryLayouts($this->request->get['category_id']);
-		} else {
-			$data['category_layout'] = array();
-		}*/
 
 	
 
@@ -517,11 +475,11 @@ class ControllerCatalogCategory extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('catalog/category_form.tpl', $data));
+		$this->response->setOutput($this->load->view('catalog/videogroup_form.tpl', $data));
 	}
 
 	protected function validateForm() {
-		if (!$this->user->hasPermission('modify', 'catalog/category')) {
+		if (!$this->user->hasPermission('modify', 'catalog/videogroup')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
@@ -540,11 +498,11 @@ class ControllerCatalogCategory extends Controller {
 
 			$url_alias_info = $this->model_catalog_url_alias->getUrlAlias($this->request->post['keyword']);
 		
-			if ($url_alias_info && isset($this->request->get['category_id']) && $url_alias_info['query'] != 'category_id=' . $this->request->get['category_id']) {
+			if ($url_alias_info && isset($this->request->get['videogroup_id']) && $url_alias_info['query'] != 'videogroup_id=' . $this->request->get['videogroup_id']) {
 				$this->error['keyword'] = sprintf($this->language->get('error_keyword'));
 			}
 
-			if ($url_alias_info && !isset($this->request->get['category_id'])) {
+			if ($url_alias_info && !isset($this->request->get['videogroup_id'])) {
 				$this->error['keyword'] = sprintf($this->language->get('error_keyword'));
 			}
 
@@ -557,7 +515,7 @@ class ControllerCatalogCategory extends Controller {
 	}
 
 	protected function validateDelete() {
-		if (!$this->user->hasPermission('modify', 'catalog/category')) {
+		if (!$this->user->hasPermission('modify', 'catalog/videogroup')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
@@ -565,7 +523,7 @@ class ControllerCatalogCategory extends Controller {
 	}
 
 	protected function validateRepair() {
-		if (!$this->user->hasPermission('modify', 'catalog/category')) {
+		if (!$this->user->hasPermission('modify', 'catalog/videogroup')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
