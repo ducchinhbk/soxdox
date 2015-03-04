@@ -1,12 +1,12 @@
 <?php
 // Heading
-$_['heading_title']          = 'Products';
+$_['heading_title']          = 'Video';
 
 // Text
-$_['text_success']           = 'Success: You have modified products!';
-$_['text_list']              = 'Product List';
-$_['text_add']               = 'Add Product';
-$_['text_edit']              = 'Edit Product';
+$_['text_success']           = 'Success: You have modified Video!';
+$_['text_list']              = 'Video List';
+$_['text_add']               = 'Add Video';
+$_['text_edit']              = 'Edit Video';
 $_['text_plus']              = '+';
 $_['text_minus']             = '-';
 $_['text_default']           = 'Default';
@@ -16,7 +16,7 @@ $_['text_percent']           = 'Percentage';
 $_['text_amount']            = 'Fixed Amount';
 
 // Column
-$_['column_name']            = 'Product Name';
+$_['column_name']            = 'Video Name';
 $_['column_model']           = 'Model';
 $_['column_image']           = 'Image';
 $_['column_price']           = 'Price';
@@ -25,7 +25,7 @@ $_['column_status']          = 'Status';
 $_['column_action']          = 'Action';
 
 // Entry
-$_['entry_name']             = 'Product Name';
+$_['entry_name']             = 'Video Name';
 $_['entry_description']      = 'Description';
 $_['entry_meta_title'] 	     = 'Meta Tag Title';
 $_['entry_meta_keyword'] 	 = 'Meta Tag Keywords';
