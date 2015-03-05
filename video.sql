@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 05, 2015 at 09:17 AM
+-- Generation Time: Mar 05, 2015 at 03:54 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1310,6 +1310,7 @@ CREATE TABLE IF NOT EXISTS `order` (
 
 CREATE TABLE IF NOT EXISTS `product` (
   `product_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `link` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
   `image` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `manufacturer_id` int(11) NOT NULL,
@@ -1330,26 +1331,26 @@ CREATE TABLE IF NOT EXISTS `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`product_id`, `link`, `image`, `manufacturer_id`, `date_available`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`, `user_id`, `customer_id`, `loved`, `duration`) VALUES
-(28, '', 'catalog/demo/htc_touch_hd_1.jpg', 5, '2009-02-03', 0, 1, 0, '2009-02-03 16:06:50', '2011-09-30 01:05:39', NULL, NULL, 0, ''),
-(29, '', 'catalog/demo/palm_treo_pro_1.jpg', 6, '2009-02-03', 0, 1, 0, '2009-02-03 16:42:17', '2011-09-30 01:06:08', NULL, NULL, 0, ''),
-(30, '', 'catalog/demo/canon_eos_5d_1.jpg', 9, '2009-02-03', 0, 1, 2, '2009-02-03 16:59:00', '2011-09-30 01:05:23', NULL, NULL, 0, ''),
-(31, '', 'catalog/demo/nikon_d300_1.jpg', 0, '2009-02-03', 0, 1, 0, '2009-02-03 17:00:10', '2011-09-30 01:06:00', NULL, NULL, 0, ''),
-(32, '', 'catalog/demo/ipod_touch_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 17:07:26', '2011-09-30 01:07:22', NULL, NULL, 0, ''),
-(33, '', 'catalog/demo/samsung_syncmaster_941bw.jpg', 0, '2009-02-03', 0, 1, 0, '2009-02-03 17:08:31', '2011-09-30 01:06:29', NULL, NULL, 0, ''),
-(34, '', 'catalog/demo/ipod_shuffle_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 18:07:54', '2011-09-30 01:07:17', NULL, NULL, 0, ''),
-(35, '', '', 0, '2009-02-03', 0, 1, 0, '2009-02-03 18:08:31', '2011-09-30 01:06:17', NULL, NULL, 0, ''),
-(36, '', 'catalog/demo/ipod_nano_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 18:09:19', '2011-09-30 01:07:12', NULL, NULL, 0, ''),
-(40, '', 'catalog/demo/iphone_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:12', '2011-09-30 01:06:53', NULL, NULL, 0, ''),
-(41, '', 'catalog/demo/imac_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:26', '2011-09-30 01:06:44', NULL, NULL, 0, ''),
-(42, 'https://www.youtube.com/watch?v=tU19-6lE1iY', 'catalog/demo/apple_cinema_30.jpg', 8, '2009-02-04', 0, 1, 1, '2009-02-03 21:07:37', '2015-03-05 11:15:59', NULL, NULL, 0, ''),
-(43, '', 'catalog/demo/macbook_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:49', '2011-09-30 01:05:46', NULL, NULL, 0, ''),
-(44, '', 'catalog/demo/macbook_air_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:00', '2011-09-30 01:05:53', NULL, NULL, 0, ''),
-(45, '', 'catalog/demo/macbook_pro_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:17', '2011-09-15 22:22:01', NULL, NULL, 0, ''),
-(46, '', 'catalog/demo/sony_vaio_1.jpg', 10, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:29', '2011-09-30 01:06:39', NULL, NULL, 0, ''),
-(47, '', 'catalog/demo/hp_1.jpg', 7, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:40', '2011-09-30 01:05:28', NULL, NULL, 0, ''),
-(48, '', 'catalog/demo/ipod_classic_1.jpg', 8, '2009-02-08', 0, 1, 0, '2009-02-08 17:21:51', '2011-09-30 01:07:06', NULL, NULL, 0, ''),
-(49, '', 'catalog/demo/samsung_tab_1.jpg', 0, '2011-04-25', 1, 1, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23', NULL, NULL, 0, '');
+INSERT INTO `product` (`product_id`, `title`, `link`, `image`, `manufacturer_id`, `date_available`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`, `user_id`, `customer_id`, `loved`, `duration`) VALUES
+(28, '', '', 'catalog/demo/htc_touch_hd_1.jpg', 5, '2009-02-03', 0, 1, 0, '2009-02-03 16:06:50', '2011-09-30 01:05:39', NULL, NULL, 0, ''),
+(29, '', '', 'catalog/demo/palm_treo_pro_1.jpg', 6, '2009-02-03', 0, 1, 0, '2009-02-03 16:42:17', '2011-09-30 01:06:08', NULL, NULL, 0, ''),
+(30, '', '', 'catalog/demo/canon_eos_5d_1.jpg', 9, '2009-02-03', 0, 1, 2, '2009-02-03 16:59:00', '2011-09-30 01:05:23', NULL, NULL, 0, ''),
+(31, '', '', 'catalog/demo/nikon_d300_1.jpg', 0, '2009-02-03', 0, 1, 0, '2009-02-03 17:00:10', '2011-09-30 01:06:00', NULL, NULL, 0, ''),
+(32, '', '', 'catalog/demo/ipod_touch_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 17:07:26', '2011-09-30 01:07:22', NULL, NULL, 0, ''),
+(33, '', '', 'catalog/demo/samsung_syncmaster_941bw.jpg', 0, '2009-02-03', 0, 1, 0, '2009-02-03 17:08:31', '2011-09-30 01:06:29', NULL, NULL, 0, ''),
+(34, '', '', 'catalog/demo/ipod_shuffle_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 18:07:54', '2011-09-30 01:07:17', NULL, NULL, 0, ''),
+(35, '', '', '', 0, '2009-02-03', 0, 1, 0, '2009-02-03 18:08:31', '2011-09-30 01:06:17', NULL, NULL, 0, ''),
+(36, '', '', 'catalog/demo/ipod_nano_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 18:09:19', '2011-09-30 01:07:12', NULL, NULL, 0, ''),
+(40, '', '', 'catalog/demo/iphone_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:12', '2011-09-30 01:06:53', NULL, NULL, 0, ''),
+(41, '', '', 'catalog/demo/imac_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:26', '2011-09-30 01:06:44', NULL, NULL, 0, ''),
+(42, '', 'https://www.youtube.com/watch?v=tU19-6lE1iY', 'catalog/demo/apple_cinema_30.jpg', 8, '2009-02-04', 0, 1, 1, '2009-02-03 21:07:37', '2015-03-05 11:15:59', NULL, NULL, 0, ''),
+(43, '', '', 'catalog/demo/macbook_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:07:49', '2011-09-30 01:05:46', NULL, NULL, 0, ''),
+(44, '', '', 'catalog/demo/macbook_air_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:00', '2011-09-30 01:05:53', NULL, NULL, 0, ''),
+(45, '', '', 'catalog/demo/macbook_pro_1.jpg', 8, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:17', '2011-09-15 22:22:01', NULL, NULL, 0, ''),
+(46, '', '', 'catalog/demo/sony_vaio_1.jpg', 10, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:29', '2011-09-30 01:06:39', NULL, NULL, 0, ''),
+(47, '', '', 'catalog/demo/hp_1.jpg', 7, '2009-02-03', 0, 1, 0, '2009-02-03 21:08:40', '2011-09-30 01:05:28', NULL, NULL, 0, ''),
+(48, '', '', 'catalog/demo/ipod_classic_1.jpg', 8, '2009-02-08', 0, 1, 0, '2009-02-08 17:21:51', '2011-09-30 01:07:06', NULL, NULL, 0, ''),
+(49, '', '', 'catalog/demo/samsung_tab_1.jpg', 0, '2011-04-25', 1, 1, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23', NULL, NULL, 0, '');
 
 -- --------------------------------------------------------
 
