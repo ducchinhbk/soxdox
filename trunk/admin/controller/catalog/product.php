@@ -418,6 +418,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_date_available'] = $this->language->get('entry_date_available');
 		$data['entry_image'] = $this->language->get('entry_image');
 		$data['entry_category'] = $this->language->get('entry_category');
+        $data['entry_videogroup'] = $this->language->get('entry_videogroup');
 		$data['entry_text'] = $this->language->get('entry_text');
 		$data['entry_required'] = $this->language->get('entry_required');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
@@ -431,6 +432,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_manufacturer'] = $this->language->get('help_manufacturer');
 		$data['help_category'] = $this->language->get('help_category');
+        $data['help_videogroup'] = $this->language->get('help_videogroup');
 		$data['help_related'] = $this->language->get('help_related');
 		$data['help_tag'] = $this->language->get('help_tag');
 

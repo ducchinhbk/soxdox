@@ -160,6 +160,20 @@
                   </div>
                 </div>
               </div>
+              
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-videogroup"><span data-toggle="tooltip" title="<?php echo $help_videogroup; ?>"><?php echo $entry_videogroup; ?></span></label>
+                <div class="col-sm-10">
+                  <input type="text" name="videogroup" value="" placeholder="<?php echo $entry_videogroup; ?>" id="input-videogroup" class="form-control" />
+                  <div id="product-videogroup" class="well well-sm" style="height: 150px; overflow: auto;">
+                    <?php foreach ($product_categories as $product_category) { ?>
+                    <div id="product-category<?php echo $product_category['category_id']; ?>"><i class="fa fa-minus-circle"></i> <?php echo $product_category['name']; ?>
+                      <input type="hidden" name="product_category[]" value="<?php echo $product_category['category_id']; ?>" />
+                    </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
             </div>
             
           </div>
