@@ -15,11 +15,6 @@ class ModelCatalogProduct extends Model {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
 
-		if (isset($data['product_store'])) {
-			foreach ($data['product_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_store SET product_id = '" . (int)$product_id . "', store_id = '" . (int)$store_id . "'");
-			}
-		}
 
 		if (isset($data['product_category'])) {
 			foreach ($data['product_category'] as $category_id) {
@@ -56,15 +51,7 @@ class ModelCatalogProduct extends Model {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_store WHERE product_id = '" . (int)$product_id . "'");
-
-		if (isset($data['product_store'])) {
-			foreach ($data['product_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_store SET product_id = '" . (int)$product_id . "', store_id = '" . (int)$store_id . "'");
-			}
-		}
-
-
+		
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . (int)$product_id . "'");
 
 		if (isset($data['product_category'])) {
@@ -96,15 +83,12 @@ class ModelCatalogProduct extends Model {
 
 			$data = $query->row;
 
-			$data['sku'] = '';
-			$data['upc'] = '';
 			$data['viewed'] = '0';
 			$data['keyword'] = '';
 			$data['status'] = '0';
 
 			$data = array_merge($data, array('product_description' => $this->getProductDescriptions($product_id)));
             $data = array_merge($data, array('product_category' => $this->getProductCategories($product_id)));
-            $data = array_merge($data, array('product_store' => $this->getProductStores($product_id)));
 			
 			$this->addProduct($data);
 		}
@@ -116,7 +100,6 @@ class ModelCatalogProduct extends Model {
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product WHERE product_id = '" . (int)$product_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
 	    $this->db->query("DELETE FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . (int)$product_id . "'");
-	    $this->db->query("DELETE FROM " . DB_PREFIX . "product_to_store WHERE product_id = '" . (int)$product_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "review WHERE product_id = '" . (int)$product_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'product_id=" . (int)$product_id . "'");
 

@@ -30,18 +30,6 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
 			}
 
-			if (isset($this->request->get['filter_model'])) {
-				$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-			}
-
-			if (isset($this->request->get['filter_price'])) {
-				$url .= '&filter_price=' . $this->request->get['filter_price'];
-			}
-
-			if (isset($this->request->get['filter_quantity'])) {
-				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
-			}
-
 			if (isset($this->request->get['filter_status'])) {
 				$url .= '&filter_status=' . $this->request->get['filter_status'];
 			}
@@ -80,18 +68,6 @@ class ControllerCatalogProduct extends Controller {
 
 			if (isset($this->request->get['filter_name'])) {
 				$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
-			}
-
-			if (isset($this->request->get['filter_model'])) {
-				$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-			}
-
-			if (isset($this->request->get['filter_price'])) {
-				$url .= '&filter_price=' . $this->request->get['filter_price'];
-			}
-
-			if (isset($this->request->get['filter_quantity'])) {
-				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 			}
 
 			if (isset($this->request->get['filter_status'])) {
@@ -136,18 +112,6 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
 			}
 
-			if (isset($this->request->get['filter_model'])) {
-				$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-			}
-
-			if (isset($this->request->get['filter_price'])) {
-				$url .= '&filter_price=' . $this->request->get['filter_price'];
-			}
-
-			if (isset($this->request->get['filter_quantity'])) {
-				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
-			}
-
 			if (isset($this->request->get['filter_status'])) {
 				$url .= '&filter_status=' . $this->request->get['filter_status'];
 			}
@@ -190,18 +154,6 @@ class ControllerCatalogProduct extends Controller {
 				$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
 			}
 
-			if (isset($this->request->get['filter_model'])) {
-				$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-			}
-
-			if (isset($this->request->get['filter_price'])) {
-				$url .= '&filter_price=' . $this->request->get['filter_price'];
-			}
-
-			if (isset($this->request->get['filter_quantity'])) {
-				$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
-			}
-
 			if (isset($this->request->get['filter_status'])) {
 				$url .= '&filter_status=' . $this->request->get['filter_status'];
 			}
@@ -230,25 +182,7 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$filter_name = null;
 		}
-
-		if (isset($this->request->get['filter_model'])) {
-			$filter_model = $this->request->get['filter_model'];
-		} else {
-			$filter_model = null;
-		}
-
-		if (isset($this->request->get['filter_price'])) {
-			$filter_price = $this->request->get['filter_price'];
-		} else {
-			$filter_price = null;
-		}
-
-		if (isset($this->request->get['filter_quantity'])) {
-			$filter_quantity = $this->request->get['filter_quantity'];
-		} else {
-			$filter_quantity = null;
-		}
-
+        
 		if (isset($this->request->get['filter_status'])) {
 			$filter_status = $this->request->get['filter_status'];
 		} else {
@@ -277,18 +211,6 @@ class ControllerCatalogProduct extends Controller {
 
 		if (isset($this->request->get['filter_name'])) {
 			$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_model'])) {
-			$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_price'])) {
-			$url .= '&filter_price=' . $this->request->get['filter_price'];
-		}
-
-		if (isset($this->request->get['filter_quantity'])) {
-			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 		}
 
 		if (isset($this->request->get['filter_status'])) {
@@ -327,9 +249,6 @@ class ControllerCatalogProduct extends Controller {
 
 		$filter_data = array(
 			'filter_name'	  => $filter_name,
-			'filter_model'	  => $filter_model,
-			'filter_price'	  => $filter_price,
-			'filter_quantity' => $filter_quantity,
 			'filter_status'   => $filter_status,
 			'sort'            => $sort,
 			'order'           => $order,
@@ -350,26 +269,10 @@ class ControllerCatalogProduct extends Controller {
 				$image = $this->model_tool_image->resize('no_image.png', 40, 40);
 			}
 
-			/*$special = false;
-
-			$product_specials = $this->model_catalog_product->getProductSpecials($result['product_id']);
-
-			foreach ($product_specials  as $product_special) {
-				if (($product_special['date_start'] == '0000-00-00' || strtotime($product_special['date_start']) < time()) && ($product_special['date_end'] == '0000-00-00' || strtotime($product_special['date_end']) > time())) {
-					$special = $product_special['price'];
-
-					break;
-				}
-			}*/
-
 			$data['products'][] = array(
 				'product_id' => $result['product_id'],
 				'image'      => $image,
 				'name'       => $result['name'],
-				'model'      => $result['model'],
-				'price'      => $result['price'],
-				'special'    => '',
-				'quantity'   => $result['quantity'],
 				'status'     => ($result['status']) ? $this->language->get('text_enabled') : $this->language->get('text_disabled'),
 				'edit'       => $this->url->link('catalog/product/edit', 'token=' . $this->session->data['token'] . '&product_id=' . $result['product_id'] . $url, 'SSL')
 			);
@@ -385,9 +288,6 @@ class ControllerCatalogProduct extends Controller {
 
 		$data['column_image'] = $this->language->get('column_image');
 		$data['column_name'] = $this->language->get('column_name');
-		$data['column_model'] = $this->language->get('column_model');
-		$data['column_price'] = $this->language->get('column_price');
-		$data['column_quantity'] = $this->language->get('column_quantity');
 		$data['column_status'] = $this->language->get('column_status');
 		$data['column_action'] = $this->language->get('column_action');
 
@@ -431,18 +331,6 @@ class ControllerCatalogProduct extends Controller {
 			$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
 		}
 
-		if (isset($this->request->get['filter_model'])) {
-			$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_price'])) {
-			$url .= '&filter_price=' . $this->request->get['filter_price'];
-		}
-
-		if (isset($this->request->get['filter_quantity'])) {
-			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
-		}
-
 		if (isset($this->request->get['filter_status'])) {
 			$url .= '&filter_status=' . $this->request->get['filter_status'];
 		}
@@ -458,9 +346,6 @@ class ControllerCatalogProduct extends Controller {
 		}
 
 		$data['sort_name'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=pd.name' . $url, 'SSL');
-		$data['sort_model'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.model' . $url, 'SSL');
-		$data['sort_price'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.price' . $url, 'SSL');
-		$data['sort_quantity'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.quantity' . $url, 'SSL');
 		$data['sort_status'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.status' . $url, 'SSL');
 		$data['sort_order'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.sort_order' . $url, 'SSL');
 
@@ -468,18 +353,6 @@ class ControllerCatalogProduct extends Controller {
 
 		if (isset($this->request->get['filter_name'])) {
 			$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_model'])) {
-			$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_price'])) {
-			$url .= '&filter_price=' . $this->request->get['filter_price'];
-		}
-
-		if (isset($this->request->get['filter_quantity'])) {
-			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
 		}
 
 		if (isset($this->request->get['filter_status'])) {
@@ -505,9 +378,6 @@ class ControllerCatalogProduct extends Controller {
 		$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $this->config->get('config_limit_admin')) + 1 : 0, ((($page - 1) * $this->config->get('config_limit_admin')) > ($product_total - $this->config->get('config_limit_admin'))) ? $product_total : ((($page - 1) * $this->config->get('config_limit_admin')) + $this->config->get('config_limit_admin')), $product_total, ceil($product_total / $this->config->get('config_limit_admin')));
 
 		$data['filter_name'] = $filter_name;
-		$data['filter_model'] = $filter_model;
-		$data['filter_price'] = $filter_price;
-		$data['filter_quantity'] = $filter_quantity;
 		$data['filter_status'] = $filter_status;
 
 		$data['sort'] = $sort;
@@ -547,8 +417,6 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_date_available'] = $this->language->get('entry_date_available');
 		$data['entry_image'] = $this->language->get('entry_image');
 		$data['entry_store'] = $this->language->get('entry_store');
-		$data['entry_manufacturer'] = $this->language->get('entry_manufacturer');
-		$data['entry_download'] = $this->language->get('entry_download');
 		$data['entry_category'] = $this->language->get('entry_category');
 		$data['entry_filter'] = $this->language->get('entry_filter');
 		$data['entry_related'] = $this->language->get('entry_related');
@@ -607,12 +475,6 @@ class ControllerCatalogProduct extends Controller {
 			$data['error_meta_title'] = array();
 		}
 
-		if (isset($this->error['model'])) {
-			$data['error_model'] = $this->error['model'];
-		} else {
-			$data['error_model'] = '';
-		}
-
 		if (isset($this->error['date_available'])) {
 			$data['error_date_available'] = $this->error['date_available'];
 		} else {
@@ -631,17 +493,7 @@ class ControllerCatalogProduct extends Controller {
 			$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));
 		}
 
-		if (isset($this->request->get['filter_model'])) {
-			$url .= '&filter_model=' . urlencode(html_entity_decode($this->request->get['filter_model'], ENT_QUOTES, 'UTF-8'));
-		}
-
-		if (isset($this->request->get['filter_price'])) {
-			$url .= '&filter_price=' . $this->request->get['filter_price'];
-		}
-
-		if (isset($this->request->get['filter_quantity'])) {
-			$url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
-		}
+		
 
 		if (isset($this->request->get['filter_status'])) {
 			$url .= '&filter_status=' . $this->request->get['filter_status'];
@@ -717,20 +569,6 @@ class ControllerCatalogProduct extends Controller {
 
 		$data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		
-	
-
-		$this->load->model('setting/store');
-
-		$data['stores'] = $this->model_setting_store->getStores();
-
-		if (isset($this->request->post['product_store'])) {
-			$data['product_store'] = $this->request->post['product_store'];
-		} elseif (isset($this->request->get['product_id'])) {
-			$data['product_store'] = $this->model_catalog_product->getProductStores($this->request->get['product_id']);
-		} else {
-			$data['product_store'] = array(0);
-		}
-
 		if (isset($this->request->post['keyword'])) {
 			$data['keyword'] = $this->request->post['keyword'];
 		} elseif (!empty($product_info)) {
