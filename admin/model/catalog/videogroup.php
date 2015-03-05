@@ -3,73 +3,67 @@ class ModelCatalogVideogroup extends Model {
 	public function addVideogroup($data) {
 		$this->event->trigger('pre.admin.videogroup.add', $data);
 
-		$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), date_added = NOW()");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
 
-		$category_id = $this->db->getLastId();
+		$videogroup_id = $this->db->getLastId();
 
-		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET image = '" . $this->db->escape($data['image']) . "' WHERE category_id = '" . (int)$category_id . "'");
-		}
 
 		foreach ($data['category_description'] as $language_id => $value) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET category_id = '" . (int)$category_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET videogroup_id = '" . (int)$videogroup_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
 
 		
 
 		if (isset($data['keyword'])) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'category_id=" . (int)$category_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'videogroup_id=" . (int)$videogroup_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
 		}
 
 		$this->cache->delete('videogroup');
 
-		$this->event->trigger('post.admin.videogroup.add', $category_id);
+		$this->event->trigger('post.admin.videogroup.add', $videogroup_id);
 
-		return $category_id;
+		return $videogroup_id;
 	}
 
-	public function editVideogroup($category_id, $data) {
+	public function editVideogroup($videogroup_id, $data) {
 		$this->event->trigger('pre.admin.videogroup.edit', $data);
 
-		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW() WHERE category_id = '" . (int)$category_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW() WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 
-		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET image = '" . $this->db->escape($data['image']) . "' WHERE category_id = '" . (int)$category_id . "'");
-		}
-
-		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE category_id = '" . (int)$category_id . "'");
+		
+		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 
 		foreach ($data['category_description'] as $language_id => $value) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET category_id = '" . (int)$category_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET videogroup_id = '" . (int)$videogroup_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
 
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'category_id=" . (int)$category_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'videogroup_id=" . (int)$videogroup_id . "'");
 
 		if ($data['keyword']) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'category_id=" . (int)$category_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'videogroup_id=" . (int)$videogroup_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
 		}
 
 		$this->cache->delete('videogroup');
 
-		$this->event->trigger('post.admin.videogroup.edit', $category_id);
+		$this->event->trigger('post.admin.videogroup.edit', $videogroup_id);
 	}
 
-	public function deleteVideogroup($category_id) {
-		$this->event->trigger('pre.admin.videogroup.delete', $category_id);
+	public function deleteVideogroup($videogroup_id) {
+		$this->event->trigger('pre.admin.videogroup.delete', $videogroup_id);
 
 		
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup WHERE category_id = '" . (int)$category_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE category_id = '" . (int)$category_id . "'");
-		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_filter WHERE category_id = '" . (int)$category_id . "'");
-		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_to_store WHERE category_id = '" . (int)$category_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_videogroup WHERE category_id = '" . (int)$category_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'category_id=" . (int)$category_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_filter WHERE category_id = '" . (int)$videogroup_id . "'");
+		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_to_store WHERE category_id = '" . (int)$videogroup_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_videogroup WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'videogroup_id=" . (int)$videogroup_id . "'");
 
 		$this->cache->delete('videogroup');
 
-		$this->event->trigger('post.admin.videogroup.delete', $category_id);
+		$this->event->trigger('post.admin.videogroup.delete', $videogroup_id);
 	}
 
 	public function repairVideogroups($parent_id = 0) {
@@ -78,8 +72,10 @@ class ModelCatalogVideogroup extends Model {
 		
 	}
 
-	public function getVideogroup($category_id) {
-		$query = $this->db->query("SELECT DISTINCT *, (SELECT GROUP_CONCAT(cd1.name ORDER BY level SEPARATOR '&nbsp;&nbsp;&gt;&nbsp;&nbsp;') FROM " . DB_PREFIX . "category_path cp LEFT JOIN " . DB_PREFIX . "videogroup_description cd1 ON (cp.path_id = cd1.category_id AND cp.category_id != cp.path_id) WHERE cp.category_id = c.category_id AND cd1.language_id = '" . (int)$this->config->get('config_language_id') . "' GROUP BY cp.category_id) AS path, (SELECT DISTINCT keyword FROM " . DB_PREFIX . "url_alias WHERE query = 'category_id=" . (int)$category_id . "') AS keyword FROM " . DB_PREFIX . "videogroup c LEFT JOIN " . DB_PREFIX . "videogroup_description cd2 ON (c.category_id = cd2.category_id) WHERE c.category_id = '" . (int)$category_id . "' AND cd2.language_id = '" . (int)$this->config->get('config_language_id') . "'");
+	public function getVideogroup($videogroup_id) {
+		$query = $this->db->query("SELECT DISTINCT *, 
+                                            (SELECT DISTINCT keyword FROM " . DB_PREFIX . "url_alias WHERE query = 'videogroup_id=" . (int)$videogroup_id . "') AS keyword 
+                                    FROM " . DB_PREFIX . "videogroup v LEFT JOIN " . DB_PREFIX . "videogroup_description vd ON (v.videogroup_id = vd.videogroup_id) WHERE v.videogroup_id = '" . (int)$videogroup_id . "' AND vd.language_id = '" . (int)$this->config->get('config_language_id') . "'");
 
 		return $query->row;
 	}
@@ -127,10 +123,10 @@ class ModelCatalogVideogroup extends Model {
 		return $query->rows;
 	}
 
-	public function getVideogroupDescriptions($category_id) {
+	public function getVideogroupDescriptions($videogroup_id) {
 		$category_description_data = array();
 
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "videogroup_description WHERE category_id = '" . (int)$category_id . "'");
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 
 		foreach ($query->rows as $result) {
 			$category_description_data[$result['language_id']] = array(
