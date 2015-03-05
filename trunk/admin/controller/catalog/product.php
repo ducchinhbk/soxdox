@@ -1,7 +1,7 @@
 <?php
 class ControllerCatalogProduct extends Controller {
 	private $error = array();
-
+        
 	public function index() {
 		$this->load->language('catalog/product');
 
@@ -20,6 +20,38 @@ class ControllerCatalogProduct extends Controller {
 		$this->load->model('catalog/product');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
+		    $data = array();
+            $video_link = $this->request->post['link'];
+            $temp = explode('=', $video_link);
+            $videoID = $temp[1];
+            
+            $urlApi = 'https://www.googleapis.com/youtube/v3/videos?id='.$videoID.'&key=AIzaSyB_ZeGLvG1hUomtrd5ItCq-awOGSJvPY8s&part=snippet,contentDetails,statistics,status';
+            
+            
+            //  Initiate curl
+            $ch = curl_init();
+            // Disable SSL verification
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            // Will return the response, if false it print the response
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            // Set the url
+            curl_setopt($ch, CURLOPT_URL,$urlApi);
+            // Execute
+            $result=curl_exec($ch);
+            // Closing
+            curl_close($ch);
+            $result = json_decode($result, true);
+            
+            //Get date from API
+            $data['title'] = $result['items'][0]['snippet']['title'];
+            $data['image'] = $result['items'][0]['snippet']['thumbnails']['high']['url'];
+            $data['duration'] = $result['items'][0]['contentDetails']['duration'];
+            $data['licensecontent'] = $result['items'][0]['contentDetails']['licensedContent'];
+            $data['viewCount'] = $result['items'][0]['statistics']['viewCount'];
+            $data['likeCount'] = $result['items'][0]['statistics']['likeCount'];
+            $data['favoriteCount'] = $result['items'][0]['statistics']['favoriteCount'];
+            
+            
 			$this->model_catalog_product->addProduct($this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
@@ -685,7 +717,6 @@ class ControllerCatalogProduct extends Controller {
 				$this->error['meta_title'][$language_id] = $this->language->get('error_meta_title');
 			}
 		}
-        echo utf8_strlen($this->request->post['link']);
         if ((utf8_strlen($this->request->post['link']) < 3) || (utf8_strlen($this->request->post['link']) > 255)) {
 				$this->error['link'] = $this->language->get('error_link');
 		}
