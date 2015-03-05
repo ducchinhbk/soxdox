@@ -28,24 +28,7 @@ class ModelCatalogCategory extends Model {
 
 		$this->db->query("INSERT INTO `" . DB_PREFIX . "category_path` SET `category_id` = '" . (int)$category_id . "', `path_id` = '" . (int)$category_id . "', `level` = '" . (int)$level . "'");
 
-		/*if (isset($data['category_filter'])) {
-			foreach ($data['category_filter'] as $filter_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_filter SET category_id = '" . (int)$category_id . "', filter_id = '" . (int)$filter_id . "'");
-			}
-		}
-
-		if (isset($data['category_store'])) {
-			foreach ($data['category_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_to_store SET category_id = '" . (int)$category_id . "', store_id = '" . (int)$store_id . "'");
-			}
-		}
-
-		// Set which layout to use with this category
-		/*if (isset($data['category_layout'])) {
-			foreach ($data['category_layout'] as $store_id => $layout_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_to_layout SET category_id = '" . (int)$category_id . "', store_id = '" . (int)$store_id . "', layout_id = '" . (int)$layout_id . "'");
-			}
-		}*/
+	
 
 		if (isset($data['keyword'])) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'category_id=" . (int)$category_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");

@@ -3,16 +3,14 @@ class ModelCatalogVideogroup extends Model {
 	public function addVideogroup($data) {
 		$this->event->trigger('pre.admin.videogroup.add', $data);
         
-		$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
-
+		$this->db->query("INSERT INTO " . DB_PREFIX . " videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
+        
 		$videogroup_id = $this->db->getLastId();
-
+        
 
 		foreach ($data['category_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET videogroup_id = '" . (int)$videogroup_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
-
-		
 
 		if (isset($data['keyword'])) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'videogroup_id=" . (int)$videogroup_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
