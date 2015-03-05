@@ -534,7 +534,7 @@ class ControllerCatalogVideogroup extends Controller {
 		$json = array();
 
 		if (isset($this->request->get['filter_name'])) {
-			$this->load->model('catalog/category');
+			$this->load->model('catalog/videogroup');
 
 			$filter_data = array(
 				'filter_name' => $this->request->get['filter_name'],
@@ -544,11 +544,11 @@ class ControllerCatalogVideogroup extends Controller {
 				'limit'       => 5
 			);
 
-			$results = $this->model_catalog_category->getCategories($filter_data);
+			$results = $this->model_catalog_videogroup->getVideogroups($filter_data);
 
 			foreach ($results as $result) {
 				$json[] = array(
-					'category_id' => $result['category_id'],
+					'videogroup_id' => $result['videogroup_id'],
 					'name'        => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8'))
 				);
 			}

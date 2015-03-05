@@ -638,6 +638,30 @@ class ControllerCatalogProduct extends Controller {
 				);
 			}
 		}
+        
+        // Video group
+		$this->load->model('catalog/videogroup');
+
+		if (isset($this->request->post['product_videogroup'])) {
+			$videogroups = $this->request->post['product_videogroup'];
+		} elseif (isset($this->request->get['product_id'])) {
+			$videogroups = $this->model_catalog_product->getProductVideogroups($this->request->get['product_id']);
+		} else {
+			$videogroups = array();
+		}
+
+		$data['product_videogroups'] = array();
+
+		foreach ($videogroups as $videogroup_id) {
+			$videogroup_info = $this->model_catalog_videogroup->getVideogroup($videogroup_id);
+
+			if ($videogroup_info) {
+				$data['product_videogroups'][] = array(
+					'videogroup_id' => $videogroup_info['videogroup_id'],
+					'name' =>  $videogroup_info['name']
+				);
+			}
+		}
 
 	
 		$data['header'] = $this->load->controller('common/header');
