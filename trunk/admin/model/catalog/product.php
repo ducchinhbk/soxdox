@@ -2,8 +2,8 @@
 class ModelCatalogProduct extends Model {
 	public function addProduct($data) {
 		$this->event->trigger('pre.admin.product.add', $data);
-
-		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET  link = '" . $this->db->escape($data['link']) . "',  date_available = '" . $this->db->escape($data['date_available']) . "',  status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
+        var_dump($data); exit;
+		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET title = '" . $this->db->escape($data['title']) . "', link = '" . $this->db->escape($data['link']) . "',  duration = '" . $this->db->escape($data['duration']) . "',  viewCount = '" . $this->db->escape($data['viewCount']) . "',  likeCount = '" . $this->db->escape($data['likeCount']) . "', favoriteCount = '" . $this->db->escape($data['favoriteCount']) . "',  date_available = '" . $this->db->escape($data['date_available']) . "',  status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
 
 		$product_id = $this->db->getLastId();
 
