@@ -409,6 +409,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['text_amount'] = $this->language->get('text_amount');
 
 		$data['entry_name'] = $this->language->get('entry_name');
+        $data['entry_link'] = $this->language->get('entry_link');
 		$data['entry_description'] = $this->language->get('entry_description');
 		$data['entry_meta_title'] = $this->language->get('entry_meta_title');
 		$data['entry_meta_description'] = $this->language->get('entry_meta_description');
@@ -416,14 +417,8 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_keyword'] = $this->language->get('entry_keyword');
 		$data['entry_date_available'] = $this->language->get('entry_date_available');
 		$data['entry_image'] = $this->language->get('entry_image');
-		$data['entry_store'] = $this->language->get('entry_store');
 		$data['entry_category'] = $this->language->get('entry_category');
-		$data['entry_filter'] = $this->language->get('entry_filter');
-		$data['entry_related'] = $this->language->get('entry_related');
-		$data['entry_attribute'] = $this->language->get('entry_attribute');
 		$data['entry_text'] = $this->language->get('entry_text');
-		$data['entry_option'] = $this->language->get('entry_option');
-		$data['entry_option_value'] = $this->language->get('entry_option_value');
 		$data['entry_required'] = $this->language->get('entry_required');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
 		$data['entry_status'] = $this->language->get('entry_status');
@@ -432,9 +427,6 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_priority'] = $this->language->get('entry_priority');
 		$data['entry_tag'] = $this->language->get('entry_tag');
 		$data['entry_customer_group'] = $this->language->get('entry_customer_group');
-		$data['entry_reward'] = $this->language->get('entry_reward');
-		$data['entry_layout'] = $this->language->get('entry_layout');
-		$data['entry_recurring'] = $this->language->get('entry_recurring');
 
 		$data['help_keyword'] = $this->language->get('help_keyword');
 		$data['help_manufacturer'] = $this->language->get('help_manufacturer');
@@ -467,6 +459,12 @@ class ControllerCatalogProduct extends Controller {
 			$data['error_name'] = $this->error['name'];
 		} else {
 			$data['error_name'] = array();
+		}
+        
+        if (isset($this->error['link'])) {
+			$data['error_link'] = $this->error['link'];
+		} else {
+			$data['error_link'] = '';
 		}
 
 		if (isset($this->error['meta_title'])) {
@@ -577,6 +575,13 @@ class ControllerCatalogProduct extends Controller {
 			$data['keyword'] = '';
 		}
 
+        if (isset($this->request->post['link'])) {
+			$data['link'] = $this->request->post['link'];
+		} elseif (!empty($product_info)) {
+			$data['link'] = $product_info['link'];
+		} else {
+			$data['link'] = '';
+		}
 
 
 		if (isset($this->request->post['date_available'])) {
@@ -654,9 +659,9 @@ class ControllerCatalogProduct extends Controller {
 				$this->error['meta_title'][$language_id] = $this->language->get('error_meta_title');
 			}
 		}
-
-		if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
-			$this->error['model'] = $this->language->get('error_model');
+        echo utf8_strlen($this->request->post['link']);
+        if ((utf8_strlen($this->request->post['link']) < 3) || (utf8_strlen($this->request->post['link']) > 255)) {
+				$this->error['link'] = $this->language->get('error_link');
 		}
 		
 		if (utf8_strlen($this->request->post['keyword']) > 0) {

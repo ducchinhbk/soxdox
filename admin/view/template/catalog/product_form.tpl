@@ -38,9 +38,18 @@
                 <?php } ?>
               </ul>
               <div class="tab-content">
+                <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-link"><?php echo $entry_link; ?></label>
+                    <div class="col-sm-10">
+                      <input type="text" name="link" value="<?php echo $link; ?>" placeholder="<?php echo $entry_link; ?>" id="link" class="form-control" />
+                      <?php if (isset($error_link)) { ?>
+                      <div class="text-danger"><?php echo $error_link; ?></div>
+                      <?php } ?>
+                    </div>
+                  </div>
                 <?php foreach ($languages as $language) { ?>
                 <div class="tab-pane" id="language<?php echo $language['language_id']; ?>">
-                  <div class="form-group required">
+                  <div class="form-group">
                     <label class="col-sm-2 control-label" for="input-name<?php echo $language['language_id']; ?>"><?php echo $entry_name; ?></label>
                     <div class="col-sm-10">
                       <input type="text" name="product_description[<?php echo $language['language_id']; ?>][name]" value="<?php echo isset($product_description[$language['language_id']]) ? $product_description[$language['language_id']]['name'] : ''; ?>" placeholder="<?php echo $entry_name; ?>" id="input-name<?php echo $language['language_id']; ?>" class="form-control" />

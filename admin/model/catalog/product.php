@@ -3,7 +3,7 @@ class ModelCatalogProduct extends Model {
 	public function addProduct($data) {
 		$this->event->trigger('pre.admin.product.add', $data);
 
-		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET  date_available = '" . $this->db->escape($data['date_available']) . "',  status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET  link = '" . $this->db->escape($data['link']) . "',  date_available = '" . $this->db->escape($data['date_available']) . "',  status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
 
 		$product_id = $this->db->getLastId();
 
@@ -39,7 +39,7 @@ class ModelCatalogProduct extends Model {
 	public function editProduct($product_id, $data) {
 		$this->event->trigger('pre.admin.product.edit', $data);
 
-		$this->db->query("UPDATE " . DB_PREFIX . "product SET date_available = '" . $this->db->escape($data['date_available']) . "', status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "product SET link = '" . $this->db->escape($data['link']) . "', date_available = '" . $this->db->escape($data['date_available']) . "', status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
 
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($data['image']) . "' WHERE product_id = '" . (int)$product_id . "'");
