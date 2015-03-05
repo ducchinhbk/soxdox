@@ -166,9 +166,9 @@
                 <div class="col-sm-10">
                   <input type="text" name="videogroup" value="" placeholder="<?php echo $entry_videogroup; ?>" id="input-videogroup" class="form-control" />
                   <div id="product-videogroup" class="well well-sm" style="height: 150px; overflow: auto;">
-                    <?php foreach ($product_categories as $product_category) { ?>
-                    <div id="product-category<?php echo $product_category['category_id']; ?>"><i class="fa fa-minus-circle"></i> <?php echo $product_category['name']; ?>
-                      <input type="hidden" name="product_category[]" value="<?php echo $product_category['category_id']; ?>" />
+                    <?php foreach ($product_videogroups as $product_videogroup) { ?>
+                    <div id="product-videogroup<?php echo $product_videogroup['videogroup_id']; ?>"><i class="fa fa-minus-circle"></i> <?php echo $product_videogroup['name']; ?>
+                      <input type="hidden" name="product_videogroup[]" value="<?php echo $product_videogroup['videogroup_id']; ?>" />
                     </div>
                     <?php } ?>
                   </div>
@@ -218,7 +218,34 @@ $('#product-category').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
 
+// Videogroup
+$('input[name=\'videogroup\']').autocomplete({
+	'source': function(request, response) {
+		$.ajax({
+			url: 'index.php?route=catalog/videogroup/autocomplete&token=<?php echo $token; ?>&filter_name=' +  encodeURIComponent(request),
+			dataType: 'json',			
+			success: function(json) {
+				response($.map(json, function(item) {
+					return {
+						label: item['name'],
+						value: item['videogroup_id']
+					}
+				}));
+			}
+		});
+	},
+	'select': function(item) {
+		$('input[name=\'videogroup\']').val('');
+		
+		$('#product-videogroup' + item['value']).remove();
+		
+		$('#product-videogroup').append('<div id="product-videogroup' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product_videogroup[]" value="' + item['value'] + '" /></div>');	
+	}
+});
 
+$('#product-videogroup').delegate('.fa-minus-circle', 'click', function() {
+	$(this).parent().remove();
+});
 
 //--></script> 
 
