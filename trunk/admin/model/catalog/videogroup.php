@@ -2,7 +2,7 @@
 class ModelCatalogVideogroup extends Model {
 	public function addVideogroup($data) {
 		$this->event->trigger('pre.admin.videogroup.add', $data);
-
+        
 		$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
 
 		$videogroup_id = $this->db->getLastId();
@@ -56,8 +56,6 @@ class ModelCatalogVideogroup extends Model {
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
-		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_filter WHERE category_id = '" . (int)$videogroup_id . "'");
-		//$this->db->query("DELETE FROM " . DB_PREFIX . "category_to_store WHERE category_id = '" . (int)$videogroup_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_to_videogroup WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'videogroup_id=" . (int)$videogroup_id . "'");
 
@@ -84,7 +82,7 @@ class ModelCatalogVideogroup extends Model {
 		$sql = "SELECT v.*, vd.* FROM " . DB_PREFIX . "videogroup v LEFT JOIN " . DB_PREFIX . "videogroup_description vd ON (v.videogroup_id = vd.videogroup_id) WHERE vd.language_id = '" . (int)$this->config->get('config_language_id') . "' ";
 
 		if (!empty($data['filter_name'])) {
-			$sql .= " AND v.name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
+			$sql .= " AND vd.name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
 		}
 
 		$sql .= " GROUP BY v.videogroup_id";

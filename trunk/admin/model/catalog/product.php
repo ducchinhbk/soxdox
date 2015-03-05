@@ -22,7 +22,11 @@ class ModelCatalogProduct extends Model {
 			}
 		}
 
-		
+		if (isset($data['product_videogroup'])) {
+			foreach ($data['product_videogroup'] as $videogroup_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_videogroup SET product_id = '" . (int)$product_id . "', videogroup_id = '" . (int)$videogroup_id . "'");
+			}
+		}
 
 		if (isset($data['keyword'])) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'product_id=" . (int)$product_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
@@ -60,7 +64,13 @@ class ModelCatalogProduct extends Model {
 			}
 		}
 
-	
+	    $this->db->query("DELETE FROM " . DB_PREFIX . "product_to_videogroup WHERE product_id = '" . (int)$product_id . "'");
+
+		if (isset($data['product_videogroup'])) {
+			foreach ($data['product_videogroup'] as $videogroup_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_videogroup SET product_id = '" . (int)$product_id . "', videogroup_id = '" . (int)$videogroup_id . "'");
+			}
+		}
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'product_id=" . (int)$product_id . "'");
 
@@ -197,6 +207,18 @@ class ModelCatalogProduct extends Model {
 		}
 
 		return $product_category_data;
+	}
+    
+    public function getProductVideogroups($product_id) {
+		$product_videogroup_data = array();
+
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_to_videogroup WHERE product_id = '" . (int)$product_id . "'");
+
+		foreach ($query->rows as $result) {
+			$product_videogroup_data[] = $result['videogroup_id'];
+		}
+
+		return $product_videogroup_data;
 	}
 
 	public function getProductFilters($product_id) {
