@@ -51,11 +51,7 @@ class ControllerCatalogProduct extends Controller {
             $data['likeCount'] = $result['items'][0]['statistics']['likeCount'];
             $data['favoriteCount'] = $result['items'][0]['statistics']['favoriteCount'];
             
-            //$data['product_description'] = $this->request->post['product_description'];
-            //$data['product_category'] = $this->request->post['product_category'];
-            //$data['product_videogroup'] = $this->request->post['product_videogroup'];
-            //var_dump($this->request->post); exit;
-            
+            $this->load->model('tool/image');
             if (!empty($this->request->post['image'])) {
                 
                 $data['image'] = $this->request->post['image'];
@@ -63,10 +59,11 @@ class ControllerCatalogProduct extends Controller {
             }
             else{
                 
-                $data['image'] = $result['items'][0]['snippet']['thumbnails']['high']['url'];
+                $image = $this->model_tool_image->download( $result['items'][0]['snippet']['thumbnails']['high']['url'] );
                 
-            }
-            //echo $data['image']; exit; 
+                $data['image'] = $image ;
+                
+            } 
                 
 			$this->model_catalog_product->addProduct($data, $this->request->post);
 

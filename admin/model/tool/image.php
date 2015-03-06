@@ -40,4 +40,21 @@ class ModelToolImage extends Model {
 			return HTTP_CATALOG . 'image/' . $new_image;
 		}
 	}
+    
+    public function download($link){
+        
+        $temp = explode('/', $link );
+        $filenameIn  = $link;
+        //var_dump($temp);
+        //echo $link;
+        //echo basename($link);
+        $filenameOut = DIR_IMAGE . 'data/' . $temp[4].'.jpg';
+        
+        $contentOrFalseOnFailure   = file_get_contents($filenameIn);
+        $byteCountOrFalseOnFailure = file_put_contents($filenameOut, $contentOrFalseOnFailure);
+        
+        $image = 'data/' . $temp[4].'.jpg';
+        //echo $image;
+        return $image;
+    }
 }
