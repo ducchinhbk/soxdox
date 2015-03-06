@@ -1,35 +1,35 @@
 <?php
 class ModelCatalogProduct extends Model {
-	public function addProduct($data) {
-		$this->event->trigger('pre.admin.product.add', $data);
-        var_dump($data); exit;
-		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET title = '" . $this->db->escape($data['title']) . "', link = '" . $this->db->escape($data['link']) . "',  duration = '" . $this->db->escape($data['duration']) . "',  viewCount = '" . $this->db->escape($data['viewCount']) . "',  likeCount = '" . $this->db->escape($data['likeCount']) . "', favoriteCount = '" . $this->db->escape($data['favoriteCount']) . "',  date_available = '" . $this->db->escape($data['date_available']) . "',  status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_added = NOW()");
+	public function addProduct($api_data, $request_data) {
+		$this->event->trigger('pre.admin.product.add', $request_data);
+       
+		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET title = '" . $this->db->escape($api_data['title']) . "', link = '" . $this->db->escape($request_data['link']) . "',  image = '" . $this->db->escape($api_data['image']) . "', duration = '" . $this->db->escape($api_data['duration']) . "',  viewCount = '" . $this->db->escape($api_data['viewCount']) . "',  likeCount = '" . $this->db->escape($api_data['likeCount']) . "', favoriteCount = '" . $this->db->escape($api_data['favoriteCount']) . "',  date_available = '" . $this->db->escape($request_data['date_available']) . "',  status = '" . (int)$request_data['status'] . "', sort_order = '" . (int)$request_data['sort_order'] . "', date_added = NOW()");
 
 		$product_id = $this->db->getLastId();
 
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($data['image']) . "' WHERE product_id = '" . (int)$product_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($api_data['image']) . "' WHERE product_id = '" . (int)$product_id . "'");
 		}
 
-		foreach ($data['product_description'] as $language_id => $value) {
+		foreach ($request_data['product_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "product_description SET product_id = '" . (int)$product_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', tag = '" . $this->db->escape($value['tag']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
 
 
-		if (isset($data['product_category'])) {
-			foreach ($data['product_category'] as $category_id) {
+		if (isset($request_data['product_category'])) {
+			foreach ($request_data['product_category'] as $category_id) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_category SET product_id = '" . (int)$product_id . "', category_id = '" . (int)$category_id . "'");
 			}
 		}
 
-		if (isset($data['product_videogroup'])) {
-			foreach ($data['product_videogroup'] as $videogroup_id) {
+		if (isset($request_data['product_videogroup'])) {
+			foreach ($request_data['product_videogroup'] as $videogroup_id) {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "product_to_videogroup SET product_id = '" . (int)$product_id . "', videogroup_id = '" . (int)$videogroup_id . "'");
 			}
 		}
 
-		if (isset($data['keyword'])) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'product_id=" . (int)$product_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
+		if (isset($request_data['keyword'])) {
+			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'product_id=" . (int)$product_id . "', keyword = '" . $this->db->escape($request_data['keyword']) . "'");
 		}
 
 

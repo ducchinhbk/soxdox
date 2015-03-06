@@ -51,24 +51,24 @@ class ControllerCatalogProduct extends Controller {
             $data['likeCount'] = $result['items'][0]['statistics']['likeCount'];
             $data['favoriteCount'] = $result['items'][0]['statistics']['favoriteCount'];
             
-            $data['product_description'] = $this->request->post['product_description'];
+            //$data['product_description'] = $this->request->post['product_description'];
             //$data['product_category'] = $this->request->post['product_category'];
             //$data['product_videogroup'] = $this->request->post['product_videogroup'];
-            var_dump($this->request->post); exit;
+            //var_dump($this->request->post); exit;
             
             if (!empty($this->request->post['image'])) {
+                
                 $data['image'] = $this->request->post['image'];
+                
             }
             else{
-                $data['image'] = $result['items'][0]['snippet']['thumbnails']['high']['url'];
-            }
-            
-            $data['link'] = $this->request->post['link']; 
-            $data['date_available'] = $this->request->post['date_available'];  
-            $data['status'] = $this->request->post['status'];
-            $data['sort_order'] = $this->request->post['sort_order']; 
                 
-			$this->model_catalog_product->addProduct($data);
+                $data['image'] = $result['items'][0]['snippet']['thumbnails']['high']['url'];
+                
+            }
+            //echo $data['image']; exit; 
+                
+			$this->model_catalog_product->addProduct($data, $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
