@@ -307,6 +307,9 @@ body {
   bottom: auto;
   background: transparent;
 }
+.item-main:hover .hour{
+    display: none;
+}
 .item-main .title a .text {
   display: block;
   width: 100%;
