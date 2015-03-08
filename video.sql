@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2015 at 01:25 PM
+-- Generation Time: Mar 08, 2015 at 04:29 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1699,13 +1699,14 @@ CREATE TABLE IF NOT EXISTS `url_alias` (
   PRIMARY KEY (`url_alias_id`),
   KEY `query` (`query`),
   KEY `keyword` (`keyword`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=894 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=953 ;
 
 --
 -- Dumping data for table `url_alias`
 --
 
 INSERT INTO `url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
+(903, 'videogroup_id=12', 'Vua đầu bếp 2014 group 9'),
 (878, 'category_id=69', 'Video hoạt hình Tâm Lý - Lãng Mạn '),
 (730, 'manufacturer_id=8', 'apple'),
 (772, 'information_id=4', 'about_us'),
@@ -1724,6 +1725,14 @@ INSERT INTO `url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (871, 'category_id=62', 'Show Việt Nam'),
 (877, 'category_id=68', 'Hành Động - Phiêu Lưu'),
 (876, 'category_id=67', 'Show Hài Hước'),
+(904, 'videogroup_id=13', 'Vua đầu bếp 2014 group 10'),
+(901, 'videogroup_id=10', 'Vua đầu bếp 2014 group 7'),
+(899, 'videogroup_id=8', 'Vua đầu bếp 2014 group 5'),
+(898, 'videogroup_id=7', 'Vua đầu bếp 2014 group 3'),
+(897, 'videogroup_id=6', ''),
+(895, 'videogroup_id=4', 'Vua đầu bếp 2014'),
+(896, 'videogroup_id=5', 'Vua đầu bếp 2014 group1'),
+(902, 'videogroup_id=11', 'Vua đầu bếp 2014 group 8'),
 (828, 'manufacturer_id=9', 'canon'),
 (829, 'manufacturer_id=5', 'htc'),
 (830, 'manufacturer_id=7', 'hewlett-packard'),
@@ -1738,6 +1747,7 @@ INSERT INTO `url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (855, 'product_id=0', 'fadfadf fsgfsg'),
 (856, 'product_id=0', 'fadfad adfadf'),
 (858, 'product_id=52', 'fadfadf'),
+(900, 'videogroup_id=9', 'Vua đầu bếp 2014 group 6'),
 (861, 'product_id=55', 'gfgfagafg'),
 (880, 'category_id=71', 'Video hoạt hình Kinh Dị - Siêu Nhiên'),
 (881, 'category_id=72', 'Video hoạt hình Hài Hước'),
@@ -1752,7 +1762,55 @@ INSERT INTO `url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (890, 'category_id=81', 'Video Báo Chí'),
 (891, 'category_id=82', 'Video Tiểu Phẩm Hài'),
 (892, 'category_id=83', 'Video Sân Khẩu - LiveShow Hài'),
-(893, 'category_id=84', 'Video Giải Trí - Vui Nhộn');
+(893, 'category_id=84', 'Video Giải Trí - Vui Nhộn'),
+(905, 'videogroup_id=14', 'Hoạt hình test group 1'),
+(906, 'videogroup_id=15', 'Hoạt hình test group 2'),
+(907, 'videogroup_id=16', 'Hoạt hình test group 3'),
+(908, 'videogroup_id=17', 'Hoạt hình test group 4'),
+(909, 'videogroup_id=18', 'Hoạt hình test group 5'),
+(910, 'videogroup_id=19', 'Hoạt hình test group 6'),
+(911, 'videogroup_id=20', 'Hoạt hình test group 7'),
+(912, 'videogroup_id=21', 'Hoạt hình test group 8'),
+(913, 'videogroup_id=22', 'Hoạt hình test group 9'),
+(914, 'videogroup_id=23', 'Hoạt hình test group 10'),
+(915, 'videogroup_id=24', 'Game test goup 1'),
+(916, 'videogroup_id=25', 'Game test goup 2'),
+(917, 'videogroup_id=26', 'Game test goup 3'),
+(918, 'videogroup_id=27', 'Game test goup 4'),
+(919, 'videogroup_id=28', 'Game test goup 5'),
+(920, 'videogroup_id=29', 'Game test goup 6'),
+(921, 'videogroup_id=30', 'Game test goup 7'),
+(922, 'videogroup_id=31', 'Game test goup 8'),
+(923, 'videogroup_id=32', 'Game test goup 9'),
+(924, 'videogroup_id=33', 'Game test goup 10'),
+(925, 'videogroup_id=34', 'Thể thao test group 1'),
+(926, 'videogroup_id=35', 'Thể thao test group 2'),
+(927, 'videogroup_id=36', 'Thể thao test group 3'),
+(928, 'videogroup_id=37', 'Thể thao test group 4'),
+(929, 'videogroup_id=38', 'Thể thao test group 5'),
+(930, 'videogroup_id=39', 'Thể thao test group 6'),
+(931, 'videogroup_id=40', 'Thể thao test group 7'),
+(932, 'videogroup_id=41', 'Thể thao test group 8'),
+(933, 'videogroup_id=42', 'Thể thao test group 9'),
+(934, 'videogroup_id=43', 'Tin tức test group 1'),
+(935, 'videogroup_id=44', 'Tin tức test group 2'),
+(936, 'videogroup_id=45', 'Tin tức test group 3'),
+(937, 'videogroup_id=46', 'Tin tức test group 4'),
+(938, 'videogroup_id=47', 'Tin tức test group 5'),
+(939, 'videogroup_id=48', 'Tin tức test group 6'),
+(940, 'videogroup_id=49', 'Tin tức test group 7'),
+(941, 'videogroup_id=50', 'Tin tức test group 8'),
+(942, 'videogroup_id=51', 'Tin tức test group 9'),
+(943, 'videogroup_id=52', 'Tin tức test group 10'),
+(944, 'videogroup_id=53', 'Hài hước test group 1'),
+(945, 'videogroup_id=54', 'Hài hước test group 2'),
+(946, 'videogroup_id=55', 'Hài hước test group 3'),
+(947, 'videogroup_id=56', 'Hài hước test group 4'),
+(948, 'videogroup_id=57', 'Hài hước test group 5'),
+(949, 'videogroup_id=58', 'Hài hước test group 6'),
+(950, 'videogroup_id=59', 'Hài hước test group 7'),
+(951, 'videogroup_id=60', 'Hài hước test group 8'),
+(952, 'videogroup_id=61', 'Hài hước test group 9');
 
 -- --------------------------------------------------------
 
@@ -1823,7 +1881,7 @@ CREATE TABLE IF NOT EXISTS `videogroup` (
   `date_modified` datetime NOT NULL,
   `category_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`videogroup_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=62 ;
 
 --
 -- Dumping data for table `videogroup`
@@ -1831,7 +1889,65 @@ CREATE TABLE IF NOT EXISTS `videogroup` (
 
 INSERT INTO `videogroup` (`videogroup_id`, `image`, `category_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`, `category_name`) VALUES
 (1, '', 35, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
-(2, '', 28, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '');
+(2, '', 28, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(4, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:50:12', '2015-03-08 20:50:12', '0'),
+(5, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:52:34', '2015-03-08 20:52:34', '0'),
+(6, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:53:10', '2015-03-08 20:53:10', '0'),
+(7, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:55:02', '2015-03-08 20:55:02', '0'),
+(8, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:55:42', '2015-03-08 20:55:42', '0'),
+(9, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:56:15', '2015-03-08 20:56:15', '0'),
+(10, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:57:11', '2015-03-08 20:57:11', '0'),
+(11, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:58:15', '2015-03-08 20:58:15', '0'),
+(12, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:58:46', '2015-03-08 20:58:46', '0'),
+(13, 'catalog/2.PNG', 33, 0, 1, 0, 1, '2015-03-08 20:59:19', '2015-03-08 20:59:19', '0'),
+(14, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:04:08', '2015-03-08 21:04:08', '0'),
+(15, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:14:52', '2015-03-08 21:14:52', '0'),
+(16, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:15:55', '2015-03-08 21:15:55', '0'),
+(17, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:16:29', '2015-03-08 21:16:29', '0'),
+(18, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:17:31', '2015-03-08 21:17:31', '0'),
+(19, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:18:04', '2015-03-08 21:18:04', '0'),
+(20, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:18:39', '2015-03-08 21:18:39', '0'),
+(21, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:19:08', '2015-03-08 21:19:08', '0'),
+(22, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:19:40', '2015-03-08 21:19:40', '0'),
+(23, 'catalog/images (23).jpg', 57, 0, 1, 0, 1, '2015-03-08 21:20:10', '2015-03-08 21:20:10', '0'),
+(24, 'catalog/game-01.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:24:58', '2015-03-08 21:24:58', '0'),
+(25, 'catalog/game2.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:25:35', '2015-03-08 21:25:35', '0'),
+(26, 'catalog/game3.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:26:17', '2015-03-08 21:26:17', '0'),
+(27, 'catalog/game4.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:26:54', '2015-03-08 21:26:54', '0'),
+(28, 'catalog/game-01.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:27:21', '2015-03-08 21:27:21', '0'),
+(29, 'catalog/game2.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:27:48', '2015-03-08 21:27:48', '0'),
+(30, 'catalog/game4.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:28:25', '2015-03-08 21:28:25', '0'),
+(31, 'catalog/game4.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:29:04', '2015-03-08 21:29:04', '0'),
+(32, 'catalog/game-01.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:29:31', '2015-03-08 21:29:31', '0'),
+(33, 'catalog/game3.jpg', 25, 0, 1, 0, 1, '2015-03-08 21:30:02', '2015-03-08 21:30:02', '0'),
+(34, 'catalog/sport1.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:33:04', '2015-03-08 21:33:04', '0'),
+(35, 'catalog/sport2.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:35:52', '2015-03-08 21:35:52', '0'),
+(36, 'catalog/sport3.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:36:31', '2015-03-08 21:36:31', '0'),
+(37, 'catalog/sport4.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:37:25', '2015-03-08 21:37:25', '0'),
+(38, 'catalog/sport5.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:38:27', '2015-03-08 21:38:27', '0'),
+(39, 'catalog/sport6.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:39:07', '2015-03-08 21:39:07', '0'),
+(40, 'catalog/sport7.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:39:46', '2015-03-08 21:39:46', '0'),
+(41, 'catalog/sport8.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:40:25', '2015-03-08 21:40:25', '0'),
+(42, 'catalog/sport9.jpg', 17, 0, 1, 0, 1, '2015-03-08 21:41:02', '2015-03-08 21:41:02', '0'),
+(43, 'catalog/news1.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:46:25', '2015-03-08 21:46:25', '0'),
+(44, 'catalog/news2.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:47:07', '2015-03-08 21:47:07', '0'),
+(45, 'catalog/news3.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:47:44', '2015-03-08 21:47:44', '0'),
+(46, 'catalog/news4.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:48:37', '2015-03-08 21:48:37', '0'),
+(47, 'catalog/news5.JPG', 24, 0, 1, 0, 1, '2015-03-08 21:49:58', '2015-03-08 21:49:58', '0'),
+(48, 'catalog/news6.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:50:39', '2015-03-08 21:50:39', '0'),
+(49, 'catalog/news7.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:51:21', '2015-03-08 21:51:21', '0'),
+(50, 'catalog/news8.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:52:10', '2015-03-08 21:52:10', '0'),
+(51, 'catalog/news9.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:52:51', '2015-03-08 21:52:51', '0'),
+(52, 'catalog/news10.jpg', 24, 0, 1, 0, 1, '2015-03-08 21:53:33', '2015-03-08 21:53:33', '0'),
+(53, 'catalog/funny1.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:07:07', '2015-03-08 22:07:07', '0'),
+(54, 'catalog/funny2.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:07:49', '2015-03-08 22:07:49', '0'),
+(55, 'catalog/funny3.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:08:37', '2015-03-08 22:08:37', '0'),
+(56, 'catalog/funny4.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:09:14', '2015-03-08 22:09:14', '0'),
+(57, 'catalog/funny5.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:09:56', '2015-03-08 22:09:56', '0'),
+(58, 'catalog/funny6.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:10:31', '2015-03-08 22:10:31', '0'),
+(59, 'catalog/funny7.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:11:20', '2015-03-08 22:11:20', '0'),
+(60, 'catalog/funny8.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:11:55', '2015-03-08 22:11:55', '0'),
+(61, 'catalog/funny9.jpg', 60, 0, 1, 0, 1, '2015-03-08 22:12:25', '2015-03-08 22:12:25', '0');
 
 -- --------------------------------------------------------
 
@@ -1855,7 +1971,65 @@ CREATE TABLE IF NOT EXISTS `videogroup_description` (
 --
 
 INSERT INTO `videogroup_description` (`videogroup_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(0, 1, 'Test video group', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'fadfadfadf', '', '');
+(0, 1, 'Test video group', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'fadfadfadf', '', ''),
+(4, 1, 'Vua đầu bếp 2014', '&lt;h1 class=&quot;yt watch-title-container&quot; style=&quot;margin-bottom: 13px; padding: 0px; border: 0px; font-size: 24px; display: table-cell; vertical-align: top; color: rgb(34, 34, 34); line-height: normal; overflow: hidden; font-family: arial, sans-serif; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;&quot;&gt;&lt;span id=&quot;eow-title&quot; class=&quot;watch-title long-title&quot; dir=&quot;ltr&quot; title=&quot;Vua đầu bếp 2014 - Tập 1 - Vòng Audition T.P HCM - Phát sóng 19/07/2014 - FULL HD&quot; style=&quot;margin: 0px; padding: 0px; border: 0px; font-size: 0.9em; letter-spacing: -0.03em; background: transparent;&quot;&gt;Vua đầu bếp 2014&lt;/span&gt;&lt;/h1&gt;', 'Vua đầu bếp 2014', 'Vua đầu bếp 2014', 'Vua đầu bếp 2014'),
+(5, 1, 'Vua đầu bếp 2014 group1', '&lt;p&gt;Vua đầu bếp 2014 group1&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group1', 'Vua đầu bếp 2014 group1', 'Vua đầu bếp 2014 group1'),
+(6, 1, 'Vua đầu bếp 2014 group 2', '&lt;p&gt;Vua đầu bếp 2014 group 2&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 2', 'Vua đầu bếp 2014 group 2', 'Vua đầu bếp 2014 group 2'),
+(7, 1, 'Vua đầu bếp 2014 group 3', '&lt;p&gt;Vua đầu bếp 2014 group 3&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 3', 'Vua đầu bếp 2014 group 3', 'Vua đầu bếp 2014 group 3'),
+(8, 1, 'Vua đầu bếp 2014 group 5', '&lt;p&gt;Vua đầu bếp 2014 group 5&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 5', 'Vua đầu bếp 2014 group 5', 'Vua đầu bếp 2014 group 5'),
+(9, 1, 'Vua đầu bếp 2014 group 6', '&lt;p&gt;Vua đầu bếp 2014 group 6&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 6', 'Vua đầu bếp 2014 group 6', 'Vua đầu bếp 2014 group 6'),
+(10, 1, 'Vua đầu bếp 2014 group 7', '&lt;p&gt;Vua đầu bếp 2014 group 7&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 7', 'Vua đầu bếp 2014 group 7', 'Vua đầu bếp 2014 group 7'),
+(11, 1, 'Vua đầu bếp 2014 group 8', '&lt;p&gt;Vua đầu bếp 2014 group 8&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 8', 'Vua đầu bếp 2014 group 8', 'Vua đầu bếp 2014 group 8'),
+(12, 1, 'Vua đầu bếp 2014 group 9', '&lt;p&gt;Vua đầu bếp 2014 group 9&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 9', 'Vua đầu bếp 2014 group 9', 'Vua đầu bếp 2014 group 9'),
+(13, 1, 'Vua đầu bếp 2014 group 10', '&lt;p&gt;Vua đầu bếp 2014 group 10&lt;br&gt;&lt;/p&gt;', 'Vua đầu bếp 2014 group 10', 'Vua đầu bếp 2014 group 10', 'Vua đầu bếp 2014 group 10'),
+(14, 1, 'Hoạt hình test group 1', '&lt;p&gt;Hoạt hình test group 1&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 1', 'Hoạt hình test group 1', 'Hoạt hình test group 1'),
+(15, 1, 'Hoạt hình test group 2', '&lt;p&gt;Hoạt hình test group 2&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 2', 'Hoạt hình test group 2', 'Hoạt hình test group 2'),
+(16, 1, 'Hoạt hình test group 3', '&lt;p&gt;Hoạt hình test group 3&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 3', 'Hoạt hình test group 3', 'Hoạt hình test group 3'),
+(17, 1, 'Hoạt hình test group 4', '&lt;p&gt;Hoạt hình test group 4&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 4', 'Hoạt hình test group 4', 'Hoạt hình test group 4'),
+(18, 1, 'Hoạt hình test group 5', '&lt;p&gt;Hoạt hình test group 5&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 5', '', 'Hoạt hình test group 5'),
+(19, 1, 'Hoạt hình test group 6', '&lt;p&gt;Hoạt hình test group 6&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 6', 'Hoạt hình test group 6', 'Hoạt hình test group 6'),
+(20, 1, 'Hoạt hình test group 7', '&lt;p&gt;Hoạt hình test group 7&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 7', 'Hoạt hình test group 7', 'Hoạt hình test group 7'),
+(21, 1, 'Hoạt hình test group 8', '&lt;p&gt;Hoạt hình test group 8&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 8', 'Hoạt hình test group 8', 'Hoạt hình test group 8'),
+(22, 1, 'Hoạt hình test group 9', '&lt;p&gt;Hoạt hình test group 9&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 9', 'Hoạt hình test group 9', 'Hoạt hình test group 9'),
+(23, 1, 'Hoạt hình test group 10', '&lt;p&gt;Hoạt hình test group 10&lt;br&gt;&lt;/p&gt;', 'Hoạt hình test group 10', 'Hoạt hình test group 10', 'Hoạt hình test group 10'),
+(24, 1, 'Game test goup 1', '&lt;p&gt;Game test goup 1&lt;br&gt;&lt;/p&gt;', 'Game test goup 1', 'Game test goup 1', 'Game test goup 1'),
+(25, 1, 'Game test goup 2', '&lt;p&gt;Game test goup 2&lt;br&gt;&lt;/p&gt;', 'Game test goup 2', 'Game test goup 2', 'Game test goup 2'),
+(26, 1, 'Game test goup 3', '&lt;p&gt;Game test goup 3&lt;br&gt;&lt;/p&gt;', 'Game test goup 3', 'Game test goup 3', 'Game test goup 3'),
+(27, 1, 'Game test goup 4', '&lt;p&gt;Game test goup 4&lt;br&gt;&lt;/p&gt;', 'Game test goup 4', 'Game test goup 4', 'Game test goup 4'),
+(28, 1, 'Game test goup 5', '&lt;p&gt;Game test goup 5&lt;br&gt;&lt;/p&gt;', 'Game test goup 5', 'Game test goup 5', 'Game test goup 5'),
+(29, 1, 'Game test goup 6', '&lt;p&gt;Game test goup 6&lt;br&gt;&lt;/p&gt;', 'Game test goup 6', 'Game test goup 6', 'Game test goup 6'),
+(30, 1, 'Game test goup 7', '&lt;p&gt;Game test goup 7&lt;br&gt;&lt;/p&gt;', 'Game test goup 7', 'Game test goup 7', 'Game test goup 7'),
+(31, 1, 'Game test goup 8', '&lt;p&gt;Game test goup 8&lt;br&gt;&lt;/p&gt;', 'Game test goup 8', 'Game test goup 8', 'Game test goup 8'),
+(32, 1, 'Game test goup 9', '&lt;p&gt;Game test goup 9&lt;br&gt;&lt;/p&gt;', 'Game test goup 9', 'Game test goup 9', 'Game test goup 9'),
+(33, 1, 'Game test goup 10', '&lt;p&gt;Game test goup 10&lt;br&gt;&lt;/p&gt;', 'Game test goup 10', 'Game test goup 10', 'Game test goup 10'),
+(34, 1, 'Thể thao test group 1', '&lt;p&gt;Thể thao test group 1&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 1', 'Thể thao test group 1', ''),
+(35, 1, 'Thể thao test group 2', '&lt;p&gt;Thể thao test group 2&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 2', 'Thể thao test group 2', 'Thể thao test group 2'),
+(36, 1, 'Thể thao test group 3', '&lt;p&gt;Thể thao test group 3&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 3', 'Thể thao test group 3', 'Thể thao test group 3'),
+(37, 1, 'Thể thao test group 4', '&lt;p&gt;Thể thao test group 4&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 4', 'Thể thao test group 4', 'Thể thao test group 4'),
+(38, 1, 'Thể thao test group 5', '&lt;p&gt;Thể thao test group 5&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 5', 'Thể thao test group 5', 'Thể thao test group 5'),
+(39, 1, 'Thể thao test group 6', '&lt;p&gt;Thể thao test group 6&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 6', 'Thể thao test group 6', 'Thể thao test group 6'),
+(40, 1, 'Thể thao test group 7', '&lt;p&gt;Thể thao test group 7&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 7', 'Thể thao test group 7', 'Thể thao test group 7'),
+(41, 1, 'Thể thao test group 8', '&lt;p&gt;Thể thao test group 8&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 8', 'Thể thao test group 8', 'Thể thao test group 8'),
+(42, 1, 'Thể thao test group 9', '&lt;p&gt;Thể thao test group 9&lt;br&gt;&lt;/p&gt;', 'Thể thao test group 9', 'Thể thao test group 9', 'Thể thao test group 9'),
+(43, 1, 'Tin tức test group 1', '&lt;p&gt;Tin tức test group 1&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 1', 'Tin tức test group 1', 'Tin tức test group 1'),
+(44, 1, 'Tin tức test group 2', '&lt;p&gt;Tin tức test group 2&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 2', 'Tin tức test group 2', 'Tin tức test group 2'),
+(45, 1, 'Tin tức test group 3', '&lt;p&gt;Tin tức test group 3&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 3', 'Tin tức test group 3', 'Tin tức test group 3'),
+(46, 1, 'Tin tức test group 4', '&lt;p&gt;Tin tức test group 4&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 4', 'Tin tức test group 4', 'Tin tức test group 4'),
+(47, 1, 'Tin tức test group 5', '&lt;p&gt;Tin tức test group 5&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 5', 'Tin tức test group 5', 'Tin tức test group 5'),
+(48, 1, 'Tin tức test group 6', '&lt;p&gt;Tin tức test group 6&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 6', 'Tin tức test group 6', 'Tin tức test group 6'),
+(49, 1, 'Tin tức test group 7', '&lt;p&gt;Tin tức test group 7&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 7', 'Tin tức test group 7', 'Tin tức test group 7'),
+(50, 1, 'Tin tức test group 8', '&lt;p&gt;Tin tức test group 8&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 8', 'Tin tức test group 8', 'Tin tức test group 8'),
+(51, 1, 'Tin tức test group 9', '&lt;p&gt;Tin tức test group 9&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 9', 'Tin tức test group 9', 'Tin tức test group 9'),
+(52, 1, 'Tin tức test group 10', '&lt;p&gt;Tin tức test group 10&lt;br&gt;&lt;/p&gt;', 'Tin tức test group 10', 'Tin tức test group 10', 'Tin tức test group 10'),
+(53, 1, 'Hài hước test group 1', '&lt;p&gt;Hài hước test group 1&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 1', 'Hài hước test group 1', 'Hài hước test group 1'),
+(54, 1, 'Hài hước test group 2', '&lt;p&gt;Hài hước test group 2&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 2', 'Hài hước test group 2', 'Hài hước test group 2'),
+(55, 1, 'Hài hước test group 3', '&lt;p&gt;Hài hước test group 3&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 3', 'Hài hước test group 3', 'Hài hước test group 3'),
+(56, 1, 'Hài hước test group 4', '&lt;p&gt;Hài hước test group 4&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 4', 'Hài hước test group 4', 'Hài hước test group 4'),
+(57, 1, 'Hài hước test group 5', '&lt;p&gt;Hài hước test group 5&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 5', 'Hài hước test group 5', 'Hài hước test group 5'),
+(58, 1, 'Hài hước test group 6', '&lt;p&gt;Hài hước test group 6&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 6', 'Hài hước test group 6', 'Hài hước test group 6'),
+(59, 1, 'Hài hước test group 7', '&lt;p&gt;Hài hước test group 7&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 7', 'Hài hước test group 7', 'Hài hước test group 7'),
+(60, 1, 'Hài hước test group 8', '&lt;p&gt;Hài hước test group 8&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 8', 'Hài hước test group 8', 'Hài hước test group 8'),
+(61, 1, 'Hài hước test group 9', '&lt;p&gt;Hài hước test group 9&lt;br&gt;&lt;/p&gt;', 'Hài hước test group 9', 'Hài hước test group 9', 'Hài hước test group 9');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
