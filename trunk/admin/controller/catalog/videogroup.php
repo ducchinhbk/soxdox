@@ -185,14 +185,22 @@ class ControllerCatalogVideogroup extends Controller {
 			'start' => ($page - 1) * $this->config->get('config_limit_admin'),
 			'limit' => $this->config->get('config_limit_admin')
 		);
-
+        
+        $this->load->model('tool/image');
 		$category_total = $this->model_catalog_videogroup->getTotalVideogroups();
 
 		$results = $this->model_catalog_videogroup->getVideogroups($filter_data);
 
 		foreach ($results as $result) {
+		  if (is_file(DIR_IMAGE . $result['image'])) {
+				$image = $this->model_tool_image->resize($result['image'], 40, 40);
+			} else {
+				$image = $this->model_tool_image->resize('no_image.png', 40, 40);
+			}
+          
 			$data['videogroups'][] = array(
 				'videogroup_id' => $result['videogroup_id'],
+                'image'      => $image,
 				'name'        => $result['name'],
 				'sort_order'  => $result['sort_order'],
 				'edit'        => $this->url->link('catalog/videogroup/edit', 'token=' . $this->session->data['token'] . '&videogroup_id=' . $result['videogroup_id'] . $url, 'SSL'),
@@ -207,6 +215,7 @@ class ControllerCatalogVideogroup extends Controller {
 		$data['text_confirm'] = $this->language->get('text_confirm');
 
 		$data['column_name'] = $this->language->get('column_name');
+        $data['column_image'] = $this->language->get('column_image');
 		$data['column_sort_order'] = $this->language->get('column_sort_order');
 		$data['column_action'] = $this->language->get('column_action');
 
