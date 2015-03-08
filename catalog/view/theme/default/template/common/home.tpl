@@ -1,793 +1,1980 @@
 <?php echo $header; ?>
-<div class="content">
-		<div class="wrapper">
-			<div class="container">
-				<div class="left-block feature-block full-width-md">
-					<div class="feature-box full-width-xs">
-						<div class="feature-news">
-							<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/feature.jpg) no-repeat; background-size: cover;"><img src="<?php echo STATIC_PATH ?>/images/feature.jpg" alt="feature"/></a>
-							<h2> Mua Lexus LX570 và Mercedes GL500?  </h2>
-							<p> Quãng đường đi làm của mình khá xa, cả đi về hết 100 km, hai xe Mazda3 và Yaris trong tầm tiền của mình, nên chọn.... </p>
-						</div>
-						<div class="trend-tag">
-							<ul class="items-list">
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/feature_related_1.jpg) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img19.png" alt="feature"/></a>
-										<a href="#"> Lamborghini Asterion có thể được đưa vào sản xuất </a>
-									</div>
-								</li>
-								<li>	
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/feature_related_2.jpg) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img20.png" alt="feature"/></a>
-										<a href="#"> GM và Ford cân nhắc sản xuất xe bán tải điện </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/feature_related_3.jpg) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img21.png" alt="feature"/></a>
-										<a href="#"> Hyundai Thành Công tổ chức lái thử SantaFe 2015 tại Hà Nội  </a>
-									</div>
-								</li>
-								
-								
-							</ul>
-						</div><!--End trend tag-->
-					</div><!--End feature tag-->
-					
-					<div class="news-list">
-						<div class="block-head hidden-lg hidden-md hidden-sm visible-xs">
-							<h2>Mới cập nhật</h2>
-							<div class="left-part"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"> </div>
-						<ul>
-							<li> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/first_news.png) no-repeat;width: 100%; height: 83px; display: block;margin-bottom: 8px;" class="img"><img src="<?php echo STATIC_PATH ?>/images/first_news.png" alt="feature"></a>
-								<a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> 
-							</li>
-							<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-							<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-							<li> <a href="#"> Tuyển VN tích cực tập luyện tại Malaysia </a> </li>
-							<li> <a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a> </li>
-							<li> <a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> </li>
-							<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-							<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-							<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-						</ul>
-					</div>
-				</div><!--End left-block-->
-				<div class="right-block hidden-md hidden-xs">
-					<div class="banner banner-300x250">
-						<a href="#"> <img src="<?php echo STATIC_PATH ?>/images/banner_300x250.png" alt="banner-300x250"/></a>
-					</div>
-					<div class="banner banner-300x250">
-						<a href="#"> <img src="<?php echo STATIC_PATH ?>/images/banner_300x250_1.png" alt="banner-300x250"/></a>
-					</div>
-				</div><!--End banner-block-->
-			</div><!--End container-->
-		</div><!--End feature-wrap-->
-		<div class="clear"> </div>
-		<div class="wrapper">
-			<div class="container">
-				<div class="mostview-block">
-					<div class="block-head">
-						<h2>ĐÁNH GIÁ XE</h2>
-						<div class="left-part"> 
-							<div class="audai-line"> </div>
-						</div>
-					</div>
-					<div class="clear"> </div>
-					<ul class="mostview-news-list slides hidden-xs">
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_1.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img1.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_2.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img2.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_3.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img3.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_4.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img4.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_2.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img1.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_3.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img2.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_4.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img3.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_1.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img4.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_3.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img1.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_4.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img2.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_1.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img3.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_2.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img4.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-					</ul>
-					<ul class="most_view_xs hidden-md hidden-sm visible-xs">
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_1.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img1.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_2.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img2.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_3.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img3.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_4.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img4.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_2.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img1.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_3.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img2.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_4.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img3.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						<li>
-							<div class="news-item"> 
-								<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_1.png) no-repeat;" class="img"><img src="<?php echo STATIC_PATH ?>/images/img4.png" alt="feature"/></a>
-								<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							</div>
-						</li>
-						
-					</ul>
-				</div><!--End mostview-block-->
-				<div class="clear"> </div>
-				<div class="banner-bottom-block hidden-sm">
-					<div class="banner banner-728x90">
-						<a href="#"> <img src="<?php echo STATIC_PATH ?>/images/banner_middle.jpg" id="mouse-banner" alt="banner_728x90"/></a>
-					</div>
-					<div class="banner banner-300x250">
-						<a href="#"> <img src="<?php echo STATIC_PATH ?>/images/banner_300x250.png" class="hide-banner" alt="logo"/></a>
-					</div>
-				</div>
-			</div><!--End container-->
-		</div><!--End wrapper-->
-		<div class="clear"> </div>
-		<div class="wrapper">
-			<div class="container">
-				<div class="block-row res_la_we_feature">
-						<div class="block-head">
-							<h2>NỔI BẬT TUẦN QUA</h2>
-							<div class="last-week-left-part"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"> </div>
-						<div class="block-1-0">
-							<div class="feature-landscape bea-cate">
-								<a href="#" class="cover beauty-height" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_5.png) no-repeat; background-size: cover;"> <img src="<?php echo STATIC_PATH ?>/images/most_view_img_5.png"> </a>
-								<h2> Điều ít biết về “thiên thần” 6 tuổi người Việt qua lời kể của</h2>
-								<ul class="relate">
-									<li><a href="#">Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt</a></li>
-									<li><a href="#">10 điểm du lịch hot nhất thế giới ngày ấy - bây giờ</a></li>
-									<li><a href="#">Phía Lee Byung Hun phẫn nộ khi chi tiết phiên tòa bị lộ </a></li>
-									<li><a href="#">Công ty bầu Đức lãi đột biến do đâu?</a></li>
-								</ul>
-							</div>
-							<div class="clear"> </div>
-							<ul class="items-list">
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_6.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_6.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>	
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_7.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_7.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_8.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_8.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_9.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_9.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_10.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_10.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_11.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_11.png" alt="feature"></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								
-								
-							</ul>
-						</div>
-					</div><!--End block-row-->
-				<div class="left-block full-width-sm full-width-xs">
-					<div class="block-row hidden-md hidden-sm">
-						<div class="block-head">
-							<h2>NỔI BẬT TUẦN QUA</h2>
-							<div class="last-week-left-part"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"> </div>
-						<div class="block-1-0">
-							<div class="feature-landscape bea-cate">
-								<a href="#" class="cover beauty-height" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_5.png) no-repeat; background-size: cover;"> <img src="<?php echo STATIC_PATH ?>/images/most_view_img_5.png" /> </a>
-								<h2> Điều ít biết về “thiên thần” 6 tuổi người Việt qua lời kể của</h2>
-								<ul class="relate">
-									<li><a href="#">Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt</a></li>
-									<li><a href="#">10 điểm du lịch hot nhất thế giới ngày ấy - bây giờ</a></li>
-									<li><a href="#">Phía Lee Byung Hun phẫn nộ khi chi tiết phiên tòa bị lộ </a></li>
-									<li><a href="#">Công ty bầu Đức lãi đột biến do đâu?</a></li>
-								</ul>
-							</div>
-							<div class="clear"> </div>
-							<ul class="items-list">
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_6.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_6.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>	
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_7.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_7.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_8.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_8.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_9.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_9.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(images/most_view_img_10.png) no-repeat; background-size: cover;" class="img"><img src="images/most_view_img_10.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								<li>
-									<div class="news-item"> 
-										<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_11.png) no-repeat; background-size: cover;" class="img"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_11.png" alt="feature"/></a>
-										<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-									</div>
-								</li>
-								
-								
-							</ul>
-						</div>
-					</div><!--End block-row-->
-					<div class="clear"> </div>
-					<div class="block-row">
-						<div class="block-content">
-							<div class="feature-box full-width-md full-width-xs">
-								<div class="block-head hidden-xs">
-									<h2 class="icon_new">TIN MỚI NHẤT</h2>
-									<div class="newest-left-part"> 
-										<div class="audai-line"> </div>
-									</div>
-								</div>
-								<div class="clear"> </div>
-								<ul class="portrait-items-list">
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_12.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_12.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_13.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_13.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_14.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_14.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_15.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_15.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_16.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_16.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="news-list ne_li_car hidden-md">
-								<h2 class="co_yel">XE MỚI</h2>
-								<ul class="new-cars">
-									<li> 
-										<a href="#" style="width: 100%; height: 100px; background:url(<?php echo STATIC_PATH ?>/images/midle_img_1.png) no-repeat; background-size: cover; display: block;margin-bottom: 8px;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/midle_img_1.png" alt="feature"></a>
-										<a href="#" style="display: block; margin: 10px;"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> 
-									</li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Tuyển VN tích cực tập luyện tại Malaysia </a> </li>
-									<li> <a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a> </li>
-									<li> <a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<a href="#" class="view-more-sub"> Xem thêm tin <i class="icon_squa"> </i> </a>		
-								</ul>
-							</div>
-						</div>
-					</div><!--End block-row-->
-					<div class="clear"> </div>
-					<div class="block-row">
-						<div class="news-item sponsor"> 
-							<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/spon_img.jpg) no-repeat; background-size: cover;" class="img">
-								<img src="<?php echo STATIC_PATH ?>/images/spon_img.jpg" alt="feature">
-							</a>
-							<a href="#" class="tit"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-							<span class="time"> Được tài trợ</span>
-						</div>
-					</div>
-					<div class="clear"> </div>
-					<div class="block-row">
-						<div class="block-content">
-							<div class="feature-box full-width-md" >
-								<div class="block-head" style="margin-top: 15px;">
-									
-								</div>
-								<div class="clear"> </div>
-								<ul class="portrait-items-list">
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_12.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_12.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_13.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_13.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_14.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_14.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_15.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_15.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_16.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_16.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_15.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_15.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-									<div class="clear"> </div>
-									<li>
-										<div class="news-item"> 
-											<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/most_view_img_16.png) no-repeat; background-size: cover;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/most_view_img_16.png" alt="feature"></a>
-											<div class="right-info">
-												<a href="#"> Trang điểm mắt nhũ tự nhiên làm bừng sáng khuôn mặt </a>
-												<span class="time"> 12: 00  |   29/11/2014</span>
-												<p class="summary"> Lorem Ipsum is simply dummy 
-												text of the printing and typesetting industry. 
-												Lorem Ipsum has been the industry's standard dummy text ever  </p>
-											</div>
-											
-										</div>
-									</li>
-								</ul>
-								
-							</div>
-							<div class="news-list ne_li_car hidden-md">
-								<h2>XE MỚI</h2>
-								<ul class="new-cars">
-									<li> 
-										<a href="#" style="width: 100%; height: 100px; background:url(<?php echo STATIC_PATH ?>/images/midle_img_1.png) no-repeat; background-size: cover; display: block;margin-bottom: 8px;" class="img_home"><img src="<?php echo STATIC_PATH ?>/images/midle_img_1.png" alt="feature"></a>
-										<a href="#" style="display: block; margin: 10px;"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> 
-									</li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Tuyển VN tích cực tập luyện tại Malaysia </a> </li>
-									<li> <a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a> </li>
-									<li> <a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> 24 tuổi, nhà văn trẻ phá kỷ lục sách </a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Triều Tiên chỉ có một người tên Kim Jong Un?</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<li> <a href="#"> Nói chuyện theo cách của giáo sư Stephen Hawking</a> </li>
-									<a href="#" class="view-more-sub"> Xem thêm tin <i class="icon_squa"> </i> </a>		
-								</ul>
-							</div>
-						</div>
-					</div><!--End block-row-->
-					<div class="block-row">
-						<a href="#" class="view_more_listnews hidden-md visible-xs">Xem thêm</a>
-						<div class="paginator hidden-xs">
-							<ol class="wp-paginate">
-								<li><a href="#" class="next"><img src="<?php echo STATIC_PATH ?>/images/arrow-left.png"></a></li>
-								<li><span class="page current">1</span></li>
-								<li><a href="#" title="2" class="page">2</a></li>
-								<li><a href="#" title="3" class="page">3</a></li>
-								<li><a href="#" title="4" class="page">4</a></li>
-								<li><a href="#" title="5" class="page">5</a></li>
-								<li><a href="#" class="next"><img src="<?php echo STATIC_PATH ?>/images/arrow-right.png"></a></li>
-							</ol>
-						</div>
-					</div>
-					
-				</div><!--End left-block-->
-				<div class="right-block hidden-sm hidden-xs">
-					<div class="block-row entertain">
-						<div class="block-head">
-							<h2 class="tit_right_bar" >SIÊU SAO XE</h2>
-							<div class="star-car-line"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"></div>
-						<ul class="items-list">
-							<li>
-								<div class="news-item" > 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_1.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_1.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<div class="clear"> </div>
-							<li>
-								<div class="news-item"> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_2.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_2.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<div class="clear"> </div>
-							<li>
-								<div class="news-item"> 
-									<a href="#" style="background:url(images/right_bar_img_3.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_3.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<div class="clear"> </div>
-							<li>
-								<div class="news-item"> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_4.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_4.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<div class="clear"> </div>
-							<li>
-								<div class="news-item"> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_5.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_5.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<div class="clear"> </div>
-							<li>
-								<div class="news-item"> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_6.png) no-repeat; background-size: cover;" class="img_rblock">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_6.png" alt="feature"/>
-									</a>
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>	
+<div class="video-top clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="video-player">
+							<div id="ywplayer"></div>
+                            <!--iframe width="100%" height="398" src="https://www.youtube.com/embed/RZVyrY2sFL4" frameborder="0" allowfullscreen></iframe-->
 							
-						</ul>
-					</div><!--End block-row-->
-					
-					<div class="clear"> </div>
-					<div class="block-row marry">
-						<div class="block-head">
-							<h2 class="tit_right_bar" >TƯ VẤN</h2>
-							<div class="cons-car-line"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"> </div>
-						<ul class="items-list">
-							<li>
-								<div class="news-item feature"> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_7.png) no-repeat; background-size: cover;" class="img">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_7.png" alt="feature"/></a>
-									<a href="#" class="tit"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>	
-							</li>
-									
-						</ul>
-					</div><!--End block-row-->
-					<div class="clear"> </div>
-					<div class="block-row video">
-						<div class="block-head">
-							<h2 class="tit_right_bar" >VIDEO</h2>
-							<div class="video-car-line"> 
-								<div class="audai-line"> </div>
-							</div>
-						</div>
-						<div class="clear"> </div>
-						<ul class="items-list">
-							<li>
-								<div class="news-item "> 
-									<a href="#" style="background:url(<?php echo STATIC_PATH ?>/images/right_bar_img_8.png) no-repeat; background-size: cover;" class="img">
-										<img src="<?php echo STATIC_PATH ?>/images/right_bar_img_8.png" alt="feature"/>
-									</a>
-									<a href="#" class="tit"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#" class="video-sm-icon"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#" class="video-sm-icon"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#" class="video-sm-icon"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#" class="video-sm-icon"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>
-							</li>
-							<li>
-								<div class="news-item"> 
-									<a href="#" class="video-sm-icon"> Trung Quốc điều tra nữ tướng vì tội tham nhũng </a>
-								</div>	
-							</li>
-									
-						</ul>
-					</div><!--End block-row-->
-					
-					<div class="clear"> </div>
-					<div class="block-row">
-						<div class="items-list">
-							<img src="<?php echo STATIC_PATH ?>/images/right_banner_1.png" alt="fadf"/>
-						</div>
-					</div><!--End block-row-->
-					<div class="clear"> </div>
-					<div class="block-row">
-						<div class="items-list">
-							<img src="<?php echo STATIC_PATH ?>/images/right_banner_2.png" alt="fadf"/>
-						</div>
-					</div><!--End block-row-->
-				</div><!--End right-block-->	
-				
-			</div><!--End container-->
-		</div><!--End wrapper-->
-		
-	</div><!--End content-->
+                        </div>
+                        <div class="video-subcribe">
+                            <div class="btn-subcribe">
+                                <span>Subcribe to Videotv</span>
+                                <div class="youtut">
+                                    <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<script type='text/javascript'>
+						jwplayer('ywplayer').setup({
+							file: 'https://www.youtube.com/watch?v=EIBwqFzCUSk',
+							width: '100%',
+							aspectratio: '16:9',
+							skin: 'five',
+							logo: {
+								file: "http://freetuts.net/upload/config/images/logo-hoc-lap-trinh-online.jpg",
+								link: 'http://freettuts.net',
+							}
+						});
+					</script>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-md-block visible-lg-block">
+                        <ul class="video-list" data-mcs-theme="minimal-dark">
+                            <li class="active">
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <div class="text">
+                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
+                                    <div class="time">3:15</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                <div class="post-bar clearfix">
+                                    <div class="pull-left">
+                                        <a class="badge-upvote-btn btn btn-invert btn-lg"><i class="fa fa-arrow-up"></i></a>
+                                        <a class="badge-downvote-btn btn btn-invert btn-lg"><i class="fa fa-arrow-down"></i></a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a class="btn btn-facebook btn-lg" href="https://www.facebook.com/sharer/sharer.php?u=http:www.soxdox.com" target="_blank"><i class="fa fa-facebook fa-lg"></i>Share<span class="hidden-xs"> on Facebook</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="video-control">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <a class="badge-post-next btn btn-lg btn-invert btn-block" href="#" role="button"><i class="fa fa-arrow-left"></i> Previous</a>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <a class="badge-post-prev btn btn-lg btn-invert btn-block" href="#" role="button">Next <i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-info clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2 class="title">What Girls Think vs What Guys Think</h2>
+                        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eligendi cum doloribus rerum autem architecto inventore, enim mollitia animi laudantium quod nobis corrupti, repellendus quibusdam odio voluptate sunt assumenda vitae repudiandae voluptatum exercitationem. Nulla, quod aspernatur aut minima at dicta!</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row social-btn">
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <span class="label label-success">6,901</span><span> Lượt xem</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=http://www.soxdox.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=http://www.soxdox.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <div class="date"><i class="fa fa-calendar"></i> 14.01.2015</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="content-info content-top clearfix">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span> <span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                        <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-top -->
+                    <div class="content-info content-music clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="tvshow">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-video-camera"></i> TV SHOW</div>
+                                </div>
+                                <div class="col-xs-10 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Show Việt Nam</a></li>
+                                        <li><a href="#">Show Âu - Mỹ</a></li>
+                                        <li><a href="#">Show Hàn Quốc</a></li>
+                                        <li><a href="#">Show Hoa Ngữ</a></li>
+                                        <li><a href="#">Show Thực Tế</a></li>
+                                        <li><a href="#">Show Hài Hước</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
+                                        <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end TV show -->
+                    
+                    <div class="content-info content-news clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="leaf">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-leaf"></i> Hoạt hình</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Hành động - Phiêu lưu</a></li>
+                                        <li><a href="#">Tâm lý - Lãng mạng</a></li>
+                                        <li><a href="#">Khoa học - Viễn tưởng</a></li>
+                                        <li><a href="#">Kinh dị - Siêu nhiên</a></li>
+                                        <li><a href="#">Hài hước</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-hoathinh -->
+                    
+                    <div class="content-info content-film clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="game">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-gamepad"></i> Game</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Xem tất cả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text-wrap">
+                                                    <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-film -->
+
+                    <div class="content-info content-music clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="sport">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-futbol-o"></i> Thể Thao</div>
+                                </div>
+                                <div class="col-xs-10 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Bóng đá Việt Nam</a></li>
+                                        <li><a href="#">Ngoại hạng anh</a></li>
+                                        <li><a href="#">Bóng đá thế giới</a></li>
+                                        <li><a href="#">La Liga</a></li>
+                                        <li><a href="#">Các môn thể thao khác</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
+                                        <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
+                                        <div class="item-main cover" style="background-image: url(public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                            <div class="title">
+                                                <a href="#">
+                                                    <span class="text-wrap">
+                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
+                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-music -->
+
+                    <div class="content-info content-news clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="news">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-newspaper-o"></i> Tin tức</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Tin thế giới</a></li>
+                                        <li><a href="#">Kinh tế</a></li>
+                                        <li><a href="#">Đời sống xã hội</a></li>
+                                        <li><a href="#">Báo chí</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-news -->
+
+                    <div class="content-info content-fashion content-news clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="funny">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-heartbeat"></i> Hài hước</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Tiểu phẩm hài</a></li>
+                                        <li><a href="#">Sân Khấu - Liveshow Hài</a></li>
+                                        <li><a href="#">Giải Trí - Vui Nhộn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-haihuoc -->
+                    
+                    <div class="content-info content-fashion content-news clearfix">
+                        <div class="content-title clearfix">
+                            <div class="row" id="public">
+                                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+                                    <div class="catalog-title"><i class="fa fa-google-wallet"></i> Cộng đồng</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10 hidden-xs">
+                                    <ul class="catalog-list">
+                                        <li><a href="#">Xem nhiều nhất</a></li>
+                                        <li><a href="#">Xem tất cả</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
+                                <div class="list-album row" data-mcs-theme="minimal-dark">
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <div class="hour">1:5:30</div>
+                                        </div>
+                                        <div class="title">
+                                            <a href="#">
+                                                <span class="text">Lorem ipsum dolor sit amet</span>
+                                            </a>
+                                            <div class="text-wrap">
+                                                <div class="time">9 month ago</div>
+                                                <div class="clock-view"><span><i class="fa fa-heart"></i> 900</span> <span><i class="fa fa-eye"></i> 158,134</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content-fashion -->
+                </div>
+            </div>
+        </div>
+    </section>
 <?php echo $footer; ?>
