@@ -35,6 +35,7 @@
               <thead>
                 <tr>
                   <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);" /></td>
+                  <td class="text-left"><?php echo $column_image; ?></td>
                   <td class="text-left"><?php if ($sort == 'name') { ?>
                     <a href="<?php echo $sort_name; ?>" class="<?php echo strtolower($order); ?>"><?php echo $column_name; ?></a>
                     <?php } else { ?>
@@ -57,6 +58,11 @@
                     <?php } else { ?>
                     <input type="checkbox" name="selected[]" value="<?php echo $videogroup['videogroup_id']; ?>" />
                     <?php } ?></td>
+                   <td class="text-left"><?php if ($videogroup['image']) { ?>
+                    <img src="<?php echo $videogroup['image']; ?>" alt="<?php echo $videogroup['name']; ?>" class="img-thumbnail" />
+                    <?php } else { ?>
+                    <span class="img-thumbnail list"><i class="fa fa-camera fa-2x"></i></span>
+                    <?php } ?></td> 
                   <td class="text-left"><?php echo $videogroup['name']; ?></td>
                   <td class="text-right"><?php echo $videogroup['sort_order']; ?></td>
                   <td class="text-right"><a href="<?php echo $videogroup['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
