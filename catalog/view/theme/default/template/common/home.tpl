@@ -32,49 +32,49 @@
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-md-block visible-lg-block">
                         <ul class="video-list" data-mcs-theme="minimal-dark">
                             <li class="active">
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
                                 </div>
                             </li>
                             <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt=""/></a>
+                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
                                 <div class="text">
                                     <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
                                     <div class="time">3:15</div>
@@ -150,7 +150,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -165,7 +165,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -180,7 +180,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -195,7 +195,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -210,7 +210,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -225,7 +225,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -240,7 +240,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -255,7 +255,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -273,7 +273,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
                                         <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -287,7 +287,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -301,7 +301,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -315,7 +315,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -329,7 +329,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -343,7 +343,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -357,7 +357,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -371,7 +371,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -385,7 +385,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -427,7 +427,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -442,7 +442,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -457,7 +457,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -472,7 +472,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -487,7 +487,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -502,7 +502,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -517,7 +517,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -532,7 +532,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -550,7 +550,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
                                         <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -564,7 +564,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -578,7 +578,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -592,7 +592,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -606,7 +606,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -620,7 +620,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -634,7 +634,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -648,7 +648,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -662,7 +662,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -704,7 +704,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -719,7 +719,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -734,7 +734,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -752,7 +752,7 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -767,7 +767,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -782,7 +782,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -797,7 +797,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -812,7 +812,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -827,7 +827,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -842,7 +842,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -857,7 +857,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -896,7 +896,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -911,7 +911,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -926,7 +926,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -944,7 +944,7 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -958,7 +958,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -972,7 +972,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -986,7 +986,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1000,7 +1000,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1014,7 +1014,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1028,7 +1028,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1042,7 +1042,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1056,7 +1056,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1070,7 +1070,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1084,7 +1084,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1098,7 +1098,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                         </div>
                                         <div class="title">
@@ -1140,7 +1140,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1155,7 +1155,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1170,7 +1170,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1185,7 +1185,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1200,7 +1200,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1215,7 +1215,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1230,7 +1230,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1245,7 +1245,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1263,7 +1263,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
                                         <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1277,7 +1277,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1291,7 +1291,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1305,7 +1305,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1319,7 +1319,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1333,7 +1333,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1347,7 +1347,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-sm-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1361,7 +1361,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1375,7 +1375,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-xs-15">
                                         <div class="item-main cover" style="background-image: url(public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="public/img/2_b.jpg" alt="img"/></a>
+                                            <a href="#"><img class="img-responsive" src="public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             <div class="hour">1:5:30</div>
                                             <div class="title">
                                                 <a href="#">
@@ -1416,7 +1416,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1431,7 +1431,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
@@ -1446,7 +1446,7 @@
                                     <div class="playlist">
                                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
                                             <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="img"/></a>
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
                                             </p>
                                         </div>
                                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
