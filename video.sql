@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 09, 2015 at 09:06 AM
+-- Generation Time: Mar 09, 2015 at 10:52 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -1292,7 +1292,7 @@ CREATE TABLE IF NOT EXISTS `product` (
   `user_id` int(11) DEFAULT NULL,
   `customer_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`product_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=105 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=115 ;
 
 --
 -- Dumping data for table `product`
@@ -1348,7 +1348,17 @@ INSERT INTO `product` (`product_id`, `title`, `link`, `image`, `manufacturer_id`
 (101, 'Cây đũa thần trong phát triển nông nghiệp Israel', 'https://www.youtube.com/watch?v=7ATugsdAFPw', 'data/7ATugsdAFPw.jpg', 0, '2015-03-09', 1, 1, 92127, 126, 0, 'PT29M40S', '2015-03-09 14:58:15', '0000-00-00 00:00:00', NULL, NULL),
 (102, 'Công nghệ nuôi Vịt hàng đầu thế giới', 'https://www.youtube.com/watch?v=mtvP0ntd390', 'data/mtvP0ntd390.jpg', 0, '2015-03-09', 1, 1, 81691, 24, 0, 'PT8M26S', '2015-03-09 14:59:46', '0000-00-00 00:00:00', NULL, NULL),
 (103, 'Cận cảnh thụ tinh nhân tạo', 'https://www.youtube.com/watch?v=xV0LArAMXQ4', 'data/xV0LArAMXQ4.jpg', 0, '2015-03-09', 1, 1, 146460, 17, 0, 'PT2M39S', '2015-03-09 15:01:43', '0000-00-00 00:00:00', NULL, NULL),
-(104, 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo', 'https://www.youtube.com/watch?v=ev9hR2xI35w', 'data/ev9hR2xI35w.jpg', 0, '2015-03-09', 1, 1, 150401, 82, 0, 'PT5M35S', '2015-03-09 15:05:56', '0000-00-00 00:00:00', NULL, NULL);
+(104, 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo', 'https://www.youtube.com/watch?v=ev9hR2xI35w', 'data/ev9hR2xI35w.jpg', 0, '2015-03-09', 1, 1, 150401, 82, 0, 'PT5M35S', '2015-03-09 15:05:56', '0000-00-00 00:00:00', NULL, NULL),
+(105, 'Những tình huống siêu hài hước trong bóng đá', 'https://www.youtube.com/watch?v=zEAXfebsFh8', 'data/zEAXfebsFh8.jpg', 0, '2015-03-09', 1, 1, 539381, 225, 0, 'PT26M54S', '2015-03-09 15:42:55', '0000-00-00 00:00:00', NULL, NULL),
+(106, 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp', 'https://www.youtube.com/watch?v=bICg-Af7U7I', 'data/bICg-Af7U7I.jpg', 0, '2015-03-09', 1, 1, 81196, 78, 0, 'PT27M20S', '2015-03-09 15:46:16', '0000-00-00 00:00:00', NULL, NULL),
+(107, 'Tiểu phẩm hài -  Công nghệ bán cơm', 'https://www.youtube.com/watch?v=2dTSwAwbz-0', 'data/2dTSwAwbz-0.jpg', 0, '2015-03-09', 1, 1, 5129, 5, 0, 'PT27M59S', '2015-03-09 15:47:44', '0000-00-00 00:00:00', NULL, NULL),
+(108, 'Hoài Linh Hay Nhất - Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh', 'https://www.youtube.com/watch?v=6QstOAXRrrM', 'data/6QstOAXRrrM.jpg', 0, '2015-03-09', 1, 1, 59341, 56, 0, 'PT1H19M21S', '2015-03-09 15:49:44', '0000-00-00 00:00:00', NULL, NULL),
+(109, 'Tiểu phẩm hài - Vợ chồng son - Hán Văn Tình, Khánh Linh', 'https://www.youtube.com/watch?v=peEQYPJiTHE', 'data/peEQYPJiTHE.jpg', 0, '2015-03-09', 1, 1, 18053, 8, 0, 'PT21M32S', '2015-03-09 16:24:11', '0000-00-00 00:00:00', NULL, NULL),
+(110, 'Tiểu phẩm VỢ hay Ô SIN', 'https://www.youtube.com/watch?v=YpksKXd_-Bo', 'data/YpksKXd_-Bo.jpg', 0, '2015-03-09', 1, 1, 9722, 9, 0, 'PT12M11S', '2015-03-09 16:26:44', '0000-00-00 00:00:00', NULL, NULL),
+(111, '[Tiểu Phẩm Hài] - Sống Nhờ Osin - Minh Hằng,Hồng Quân,Lan Minh,', 'https://www.youtube.com/watch?v=MmU-ggJxd7c', 'data/MmU-ggJxd7c.jpg', 0, '2015-03-09', 1, 1, 14293, 9, 0, 'PT28M54S', '2015-03-09 16:37:19', '0000-00-00 00:00:00', NULL, NULL),
+(112, '[Tiểu Phẩm Hài] - Tham Thì Thâm - Quang Tèo,Bình Trọng,Kim Xuyến', 'https://www.youtube.com/watch?v=7aJCNQ-V_yI', 'data/7aJCNQ-V_yI.jpg', 0, '2015-03-09', 1, 1, 4871, 9, 0, 'PT29M40S', '2015-03-09 16:38:56', '0000-00-00 00:00:00', NULL, NULL),
+(113, '[Tiểu Phẩm Hài] - Khách Thuê Nhà - Vân Dung,Minh Vượng,Phạm Bằng', 'https://www.youtube.com/watch?v=ADkSR2QVlvM', 'data/ADkSR2QVlvM.jpg', 0, '2015-03-09', 1, 1, 20981, 14, 0, 'PT52M42S', '2015-03-09 16:46:18', '0000-00-00 00:00:00', NULL, NULL),
+(114, 'HÀI: Bản lĩnh đàn ông - Phạm Bằng, Thu Hương, Thanh Dương, Thanh Tú, Thanh Hùng, Nam Cường', 'https://www.youtube.com/watch?v=SWEkMOm_CZw', 'data/SWEkMOm_CZw.jpg', 0, '2015-03-09', 1, 1, 10058, 14, 0, 'PT17M18S', '2015-03-09 16:52:02', '0000-00-00 00:00:00', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1423,7 +1433,17 @@ INSERT INTO `product_description` (`product_id`, `language_id`, `name`, `descrip
 (101, 1, 'Cây đũa thần trong phát triển nông nghiệp Israel ', '&lt;p&gt;Cây đũa thần trong phát triển nông nghiệp Israel&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Cây đũa thần trong phát triển nông nghiệp Israel ', 'Cây đũa thần trong phát triển nông nghiệp Israel ', 'Cây đũa thần trong phát triển nông nghiệp Israel '),
 (102, 1, 'Công nghệ nuôi Vịt hàng đầu thế giới ', '&lt;p&gt;Công nghệ nuôi Vịt hàng đầu thế giới&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Công nghệ nuôi Vịt hàng đầu thế giới ', 'Công nghệ nuôi Vịt hàng đầu thế giới ', 'Công nghệ nuôi Vịt hàng đầu thế giới '),
 (103, 1, 'Cận cảnh thụ tinh nhân tạo ', '&lt;p&gt;Cận cảnh thụ tinh nhân tạo&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Cận cảnh thụ tinh nhân tạo ', 'Cận cảnh thụ tinh nhân tạo ', 'Cận cảnh thụ tinh nhân tạo '),
-(104, 1, 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', '&lt;p&gt;Thu hoạch ngô bằng Máy nông nghiệp bá đạo&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ');
+(104, 1, 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', '&lt;p&gt;Thu hoạch ngô bằng Máy nông nghiệp bá đạo&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo '),
+(105, 1, 'Những tình huống siêu hài hước trong bóng đá ', '&lt;p&gt;Những tình huống siêu hài hước trong bóng đá&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Những tình huống siêu hài hước trong bóng đá ', 'Những tình huống siêu hài hước trong bóng đá ', 'Những tình huống siêu hài hước trong bóng đá '),
+(106, 1, 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp', '&lt;p&gt;Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp&lt;br&gt;&lt;/p&gt;', '', 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp', 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp', 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp'),
+(107, 1, 'Tiểu phẩm hài - Công nghệ bán cơm ', '&lt;p&gt;Tiểu phẩm hài - Công nghệ bán cơm&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Tiểu phẩm hài - Công nghệ bán cơm ', 'Tiểu phẩm hài - Công nghệ bán cơm ', 'Tiểu phẩm hài - Công nghệ bán cơm '),
+(108, 1, 'Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh ', '&lt;p&gt;Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh&amp;nbsp;&lt;br&gt;&lt;/p&gt;', '', 'Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh ', 'Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh ', 'Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh '),
+(109, 1, 'Tiểu phẩm hài - Vợ chồng son', '&lt;p&gt;Tiểu phẩm hài - Vợ chồng son&lt;br&gt;&lt;/p&gt;', '', 'Tiểu phẩm hài - Vợ chồng son', 'Tiểu phẩm hài - Vợ chồng son', 'Tiểu phẩm hài - Vợ chồng son'),
+(110, 1, 'Tiểu phẩm VỢ hay Ô SIN ', '&lt;h1 class=&quot;yt watch-title-container&quot; style=&quot;margin-bottom: 13px; padding: 0px; border: 0px; display: table-cell; vertical-align: top; overflow: hidden; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 24px; line-height: normal;&quot;&gt;Tiểu phẩm VỢ hay Ô SIN&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;', '', 'Tiểu phẩm VỢ hay Ô SIN ', 'Tiểu phẩm VỢ hay Ô SIN ', 'Tiểu phẩm VỢ hay Ô SIN '),
+(111, 1, 'Tiểu Phẩm Hài - Sống Nhờ Osin', '&lt;p&gt;Tiểu Phẩm Hài - Sống Nhờ Osin&lt;br&gt;&lt;/p&gt;', '', 'Tiểu Phẩm Hài - Sống Nhờ Osin', 'Tiểu Phẩm Hài - Sống Nhờ Osin', 'Tiểu Phẩm Hài - Sống Nhờ Osin'),
+(112, 1, 'Tiểu Phẩm Hài - Tham Thì Thâm', '&lt;p&gt;Tiểu Phẩm Hài - Tham Thì Thâm&lt;br&gt;&lt;/p&gt;', '', 'Tiểu Phẩm Hài - Tham Thì Thâm', 'Tiểu Phẩm Hài - Tham Thì Thâm', 'Tiểu Phẩm Hài - Tham Thì Thâm'),
+(113, 1, 'Tiểu Phẩm Hài - Khách Thuê Nhà', '&lt;p&gt;Tiểu Phẩm Hài - Khách Thuê Nhà&lt;br&gt;&lt;/p&gt;', '', 'Tiểu Phẩm Hài - Khách Thuê Nhà', 'Tiểu Phẩm Hài - Khách Thuê Nhà', 'Tiểu Phẩm Hài - Khách Thuê Nhà'),
+(114, 1, 'HÀI: Bản lĩnh đàn ông', '&lt;p&gt;HÀI: Bản lĩnh đàn ông&lt;br&gt;&lt;/p&gt;', '', 'HÀI: Bản lĩnh đàn ông', 'HÀI: Bản lĩnh đàn ông', 'HÀI: Bản lĩnh đàn ông');
 
 -- --------------------------------------------------------
 
@@ -1732,7 +1752,46 @@ INSERT INTO `product_to_category` (`product_id`, `category_id`) VALUES
 (104, 78),
 (104, 79),
 (104, 80),
-(104, 81);
+(104, 81),
+(105, 60),
+(105, 82),
+(105, 83),
+(105, 84),
+(106, 60),
+(106, 82),
+(106, 83),
+(106, 84),
+(107, 60),
+(107, 82),
+(107, 83),
+(107, 84),
+(108, 60),
+(108, 82),
+(108, 83),
+(108, 84),
+(109, 60),
+(109, 82),
+(109, 83),
+(109, 84),
+(110, 60),
+(110, 82),
+(110, 83),
+(110, 84),
+(111, 60),
+(111, 82),
+(111, 83),
+(111, 84),
+(112, 60),
+(112, 82),
+(112, 83),
+(112, 84),
+(113, 60),
+(113, 83),
+(113, 84),
+(114, 60),
+(114, 82),
+(114, 83),
+(114, 84);
 
 -- --------------------------------------------------------
 
@@ -2253,7 +2312,97 @@ INSERT INTO `product_to_videogroup` (`product_id`, `videogroup_id`) VALUES
 (104, 49),
 (104, 50),
 (104, 51),
-(104, 52);
+(104, 52),
+(105, 53),
+(105, 54),
+(105, 55),
+(105, 56),
+(105, 57),
+(105, 58),
+(105, 59),
+(105, 60),
+(105, 61),
+(106, 53),
+(106, 54),
+(106, 55),
+(106, 56),
+(106, 57),
+(106, 58),
+(106, 59),
+(106, 60),
+(106, 61),
+(107, 53),
+(107, 54),
+(107, 55),
+(107, 56),
+(107, 57),
+(107, 58),
+(107, 59),
+(107, 60),
+(107, 61),
+(108, 53),
+(108, 54),
+(108, 55),
+(108, 56),
+(108, 57),
+(108, 58),
+(108, 59),
+(108, 60),
+(108, 61),
+(109, 53),
+(109, 54),
+(109, 55),
+(109, 56),
+(109, 57),
+(109, 58),
+(109, 59),
+(109, 60),
+(109, 61),
+(110, 53),
+(110, 54),
+(110, 55),
+(110, 56),
+(110, 57),
+(110, 58),
+(110, 59),
+(110, 60),
+(110, 61),
+(111, 53),
+(111, 54),
+(111, 55),
+(111, 56),
+(111, 57),
+(111, 58),
+(111, 59),
+(111, 60),
+(111, 61),
+(112, 53),
+(112, 54),
+(112, 55),
+(112, 56),
+(112, 57),
+(112, 58),
+(112, 59),
+(112, 60),
+(112, 61),
+(113, 53),
+(113, 54),
+(113, 55),
+(113, 56),
+(113, 57),
+(113, 58),
+(113, 59),
+(113, 60),
+(113, 61),
+(114, 53),
+(114, 54),
+(114, 55),
+(114, 56),
+(114, 57),
+(114, 58),
+(114, 59),
+(114, 60),
+(114, 61);
 
 -- --------------------------------------------------------
 
@@ -2511,7 +2660,7 @@ CREATE TABLE IF NOT EXISTS `url_alias` (
   PRIMARY KEY (`url_alias_id`),
   KEY `query` (`query`),
   KEY `keyword` (`keyword`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1003 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1013 ;
 
 --
 -- Dumping data for table `url_alias`
@@ -2671,7 +2820,17 @@ INSERT INTO `url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (999, 'product_id=101', 'Cây đũa thần trong phát triển nông nghiệp Israel '),
 (1000, 'product_id=102', 'Công nghệ nuôi Vịt hàng đầu thế giới '),
 (1001, 'product_id=103', 'Cận cảnh thụ tinh nhân tạo '),
-(1002, 'product_id=104', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo ');
+(1002, 'product_id=104', 'Thu hoạch ngô bằng Máy nông nghiệp bá đạo '),
+(1003, 'product_id=105', 'Những tình huống siêu hài hước trong bóng đá '),
+(1004, 'product_id=106', 'Tiểu phẩm hài - Chỉ vì tiếng gáy - Chiến Thắng, Văn Hiệp'),
+(1005, 'product_id=107', 'Tiểu phẩm hài - Công nghệ bán cơm '),
+(1006, 'product_id=108', 'Tổng Hợp Các Tiểu Phẩm Hài Hoài Linh '),
+(1007, 'product_id=109', 'Tiểu phẩm hài - Vợ chồng son'),
+(1008, 'product_id=110', 'Tiểu phẩm VỢ hay Ô SIN '),
+(1009, 'product_id=111', 'Tiểu Phẩm Hài - Sống Nhờ Osin'),
+(1010, 'product_id=112', 'Tiểu Phẩm Hài - Tham Thì Thâm'),
+(1011, 'product_id=113', 'Tiểu Phẩm Hài - Khách Thuê Nhà'),
+(1012, 'product_id=114', 'HÀI: Bản lĩnh đàn ông');
 
 -- --------------------------------------------------------
 
