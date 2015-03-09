@@ -19,7 +19,7 @@
                     </div>
 					<script type='text/javascript'>
 						jwplayer('ywplayer').setup({
-							file: 'https://www.youtube.com/watch?v=T4cdfRohhcg',
+							file: 'https://www.youtube.com/watch?v=aEkNB-nH_QU',
 							width: '100%',
 							aspectratio: '16:9',
 							skin: 'five',
