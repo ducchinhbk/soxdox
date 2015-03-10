@@ -25,8 +25,8 @@ class ModelCatalogVideogroup extends Model {
 
 	public function editVideogroup($videogroup_id, $data) {
 		$this->event->trigger('pre.admin.videogroup.edit', $data);
-
-		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW() WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+        
+		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . $data['path'] . "', date_modified = NOW() WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 
 		
 		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
@@ -70,8 +70,8 @@ class ModelCatalogVideogroup extends Model {
 
 	public function getVideogroup($videogroup_id) {
 		$query = $this->db->query("SELECT DISTINCT *, 
-                                            (SELECT DISTINCT keyword FROM " . DB_PREFIX . "url_alias WHERE query = 'videogroup_id=" . (int)$videogroup_id . "') AS keyword 
-                                    FROM " . DB_PREFIX . "videogroup v LEFT JOIN " . DB_PREFIX . "videogroup_description vd ON (v.videogroup_id = vd.videogroup_id) WHERE v.videogroup_id = '" . (int)$videogroup_id . "' AND vd.language_id = '" . (int)$this->config->get('config_language_id') . "'");
+                                            (SELECT DISTINCT keyword FROM url_alias WHERE query = 'videogroup_id= " . (int)$videogroup_id . "') AS keyword 
+                                    FROM videogroup v LEFT JOIN videogroup_description vd ON (v.videogroup_id = vd.videogroup_id) WHERE v.videogroup_id = '" . (int)$videogroup_id . "' AND vd.language_id = '" . (int)$this->config->get('config_language_id') . "'");
 
 		return $query->row;
 	}
