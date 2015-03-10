@@ -395,7 +395,7 @@ class ControllerCatalogVideogroup extends Controller {
 
 		if (isset($this->request->post['category_description'])) {
 			$data['category_description'] = $this->request->post['category_description'];
-		} elseif (isset($this->request->get['category_id'])) {
+		} elseif (isset($this->request->get['videogroup_id'])) {
 			$data['category_description'] = $this->model_catalog_videogroup->getVideogroupDescriptions($this->request->get['videogroup_id']);
 		} else {
 			$data['category_description'] = array();
@@ -404,7 +404,7 @@ class ControllerCatalogVideogroup extends Controller {
 		if (isset($this->request->post['path'])) {
 			$data['path'] = $this->request->post['path'];
 		} elseif (!empty($videogroup_info)) {
-			$data['path'] = $videogroup_info['path'];
+			$data['path'] = $videogroup_info['category_name'];
 		} else {
 			$data['path'] = '';
 		}
@@ -412,7 +412,7 @@ class ControllerCatalogVideogroup extends Controller {
 		if (isset($this->request->post['parent_id'])) {
 			$data['parent_id'] = $this->request->post['parent_id'];
 		} elseif (!empty($videogroup_info)) {
-			$data['parent_id'] = $videogroup_info['parent_id'];
+			$data['parent_id'] = $videogroup_info['category_id'];
 		} else {
 			$data['parent_id'] = 0;
 		}

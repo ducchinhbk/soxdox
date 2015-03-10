@@ -118,26 +118,7 @@
                   <textarea name="config_comment" rows="5" placeholder="<?php echo $entry_comment; ?>" id="input-comment" class="form-control"><?php echo $config_comment; ?></textarea>
                 </div>
               </div>
-              <?php if ($locations) { ?>
-              <div class="form-group">
-                <label class="col-sm-2 control-label"><span data-toggle="tooltip" data-container="#tab-general" title="<?php echo $help_location; ?>"><?php echo $entry_location; ?></span></label>
-                <div class="col-sm-10">
-                  <?php foreach ($locations as $location) { ?>
-                  <div class="checkbox">
-                    <label>
-                      <?php if (in_array($location['location_id'], $config_location)) { ?>
-                      <input type="checkbox" name="config_location[]" value="<?php echo $location['location_id']; ?>" checked="checked" />
-                      <?php echo $location['name']; ?>
-                      <?php } else { ?>
-                      <input type="checkbox" name="config_location[]" value="<?php echo $location['location_id']; ?>" />
-                      <?php echo $location['name']; ?>
-                      <?php } ?>
-                    </label>
-                  </div>
-                  <?php } ?>
-                </div>
-              </div>
-              <?php } ?>
+             
             </div>
             <div class="tab-pane" id="tab-store">
               <div class="form-group required">
