@@ -45,7 +45,8 @@ class ControllerCatalogProduct extends Controller {
             //Get date from API
             
             $data['title'] = $result['items'][0]['snippet']['title'];
-            $data['duration'] = $result['items'][0]['contentDetails']['duration'];
+            $data['duration'] = $this->model_catalog_product->duration($result['items'][0]['contentDetails']['duration']);
+            
             $data['licensecontent'] = $result['items'][0]['contentDetails']['licensedContent'];
             $data['viewCount'] = $result['items'][0]['statistics']['viewCount'];
             $data['likeCount'] = $result['items'][0]['statistics']['likeCount'];
@@ -601,6 +602,14 @@ class ControllerCatalogProduct extends Controller {
 			$data['image'] = $product_info['image'];
 		} else {
 			$data['image'] = '';
+		}
+        
+        if (isset($this->request->post['duration'])) {
+			$data['duration'] = $this->request->post['duration'];
+		} elseif (!empty($product_info)) {
+			$data['duration'] = $product_info['duration'];
+		} else {
+			$data['duration'] = '';
 		}
 
 		$this->load->model('tool/image');
