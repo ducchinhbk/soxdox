@@ -5,27 +5,30 @@ class ControllerCommonSeoUrl extends Controller {
 		if ($this->config->get('config_seo_url')) {
 			$this->url->addRewrite($this);
 		}
-
+           
 		// Decode URL
-		if (isset($this->request->get['_route_'])) {
-			$parts = explode('/', $this->request->get['_route_']);
-
+		if (isset($this->request->get['route'])) {
+		  echo $this->remove_vietnamese_accents('Sân Khẩu - LiveShow Hài');
+			$parts = explode('/', $this->request->get['route']);
+            var_dump($parts);
 			// remove any empty arrays from trailing
 			if (utf8_strlen(end($parts)) == 0) {
 				array_pop($parts);
 			}
-
+var_dump($parts);
 			foreach ($parts as $part) {
+			 echo "part= ". $part;
 				$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE keyword = '" . $this->db->escape($part) . "'");
 
 				if ($query->num_rows) {
+				    echo "run here";
 					$url = explode('=', $query->row['query']);
-
+                    var_dump($url);
 					if ($url[0] == 'product_id') {
 						$this->request->get['product_id'] = $url[1];
 					}
 
-					if ($url[0] == 'category_id') {
+					if ($url[0] == 'videogroup_id') {
 						if (!isset($this->request->get['path'])) {
 							$this->request->get['path'] = $url[1];
 						} else {
@@ -128,4 +131,5 @@ class ControllerCommonSeoUrl extends Controller {
 			return $link;
 		}
 	}
+    
 }
