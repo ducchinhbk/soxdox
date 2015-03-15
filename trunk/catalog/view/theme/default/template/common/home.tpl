@@ -2,11 +2,25 @@
 <div class="video-top clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" id="video-block">
+                        <div id="ajaxloading">
+                            <img src="<?php echo STATIC_PATH; ?>/public/img/ajax-loader.gif"  alt="ajaxloading"/>
+                        </div>
                         <div class="video-player">
 							<div id="ywplayer"></div>
-                            <!--iframe width="100%" height="398" src="https://www.youtube.com/embed/RZVyrY2sFL4" frameborder="0" allowfullscreen></iframe-->
-							
+                            
+							<script type='text/javascript'>
+        						jwplayer('ywplayer').setup({
+        							file: 'https://www.youtube.com/watch?v=aEkNB-nH_QU',
+        							width: '100%',
+        							aspectratio: '16:9',
+        							skin: 'five',
+        							logo: {
+        								file: "http://freetuts.net/upload/config/images/logo-hoc-lap-trinh-online.jpg",
+        								link: 'http://freettuts.net',
+        							}
+        						});
+        					</script>
                         </div>
                         <div class="video-subcribe">
                             <div class="btn-subcribe">
@@ -17,69 +31,34 @@
                             </div>
                         </div>
                     </div>
-					<script type='text/javascript'>
-						jwplayer('ywplayer').setup({
-							file: 'https://www.youtube.com/watch?v=aEkNB-nH_QU',
-							width: '100%',
-							aspectratio: '16:9',
-							skin: 'five',
-							logo: {
-								file: "http://freetuts.net/upload/config/images/logo-hoc-lap-trinh-online.jpg",
-								link: 'http://freettuts.net',
-							}
-						});
-					</script>
+					
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 visible-md-block visible-lg-block">
                         <ul class="video-list" data-mcs-theme="minimal-dark">
-                            <li class="active">
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="img" href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/video-play.jpg" alt="Fallout vs Skyrim"/></a>
-                                <div class="text">
-                                    <a href="#">This "Fallout vs Skyrim" Fan Battle Is Bloody Awesome</a>
-                                    <div class="time">3:15</div>
-                                </div>
-                            </li>
+                            <?php $i=0; foreach( $videos as $video ){ ?>
+                                <?php if( $i <= 0 ) {?>
+                                
+                                    <li class="active video-item">
+                                        <a class="img" ><img class="img-responsive" src="<?php echo $video['image']; ?>" alt="<?php echo $video['name']; ?>"/></a>
+                                        <div class="text">
+                                            <a ><?php echo $video['name']; ?></a>
+                                            <div class="time"><?php echo $video['duration']; ?></div>
+                                        </div>
+                                        <input type="hidden" class="videoID" value="<?php echo $video['videoID_decode']; ?>" />
+                                    </li>
+                                
+                                <?php } else {?>
+                                
+                                        <li class="video-item" >
+                                            <a class="img" ><img class="img-responsive" src="<?php echo $video['image']; ?>" alt="<?php echo $video['name']; ?>"/></a>
+                                            <div class="text">
+                                                <a ><?php echo $video['name']; ?></a>
+                                                <div class="time"><?php echo $video['duration']; ?></div>
+                                            </div>
+                                            <input type="hidden" class="videoID" value="<?php echo $video['videoID_decode']; ?>" />
+                                        </li> 
+                                
+                            <?php } $i++; } ?>
+                            
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -99,10 +78,10 @@
                                 <div class="video-control">
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                            <a class="badge-post-next btn btn-lg btn-invert btn-block" href="#" role="button"><i class="fa fa-arrow-left"></i> Previous</a>
+                                            <div id="prev-video" class="badge-post-next btn btn-lg btn-invert btn-block"  role="button"><i class="fa fa-arrow-left"></i> Previous</div>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                            <a class="badge-post-prev btn btn-lg btn-invert btn-block" href="#" role="button">Next <i class="fa fa-arrow-right"></i></a>
+                                            <div id="next-video" class="badge-post-prev btn btn-lg btn-invert btn-block" href="" role="button">Next <i class="fa fa-arrow-right"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-info clearfix">
+        <div class="video-info clearfix" id="description">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -122,13 +101,13 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="row social-btn">
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                <span class="label label-success">6,901</span><span> Lượt xem</span>
+                                <span class="label label-success" style="background-color: #167ac6;">6,901</span><span> Lượt xem</span>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                                 <iframe src="https://www.facebook.com/plugins/like.php?href=http://www.soxdox.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-                                <iframe src="https://www.facebook.com/plugins/like.php?href=http://www.soxdox.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+                                <span class="label label-success" style="background-color: #E45C5C;" >6,901</span><span> Yêu thích</span>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                                 <div class="date"><i class="fa fa-calendar"></i> 14.01.2015</div>
@@ -145,258 +124,40 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="content-info content-top clearfix">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
-                                <div class="list-album row" data-mcs-theme="minimal-dark">
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">1 video</span> <span class="view-count">1 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span> <span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-                                        <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
+                                <?php $i=0; foreach( $newVideos as $newVideo){?>
+                                        <?php if( $i <= 0 ){?>
+                                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                                <div class="item-main item-lg cover" style="background-image: url(<?php echo $newVideo['image'];?> )">
+                                                    <a href="<?php echo $newVideo['actLink'];?>"><img class="img-responsive" src="<?php echo $newVideo['image']; ?>" alt="<?php echo $newVideo['name']; ?>"/></a>
+                                                    <div class="title">
+                                                        <a href="<?php echo $newVideo['actLink']?>">
+                                                            <span class="text-wrap">
+                                                                <span class="text"><?php echo $newVideo['name']?></span>
+                                                                <span class="clock-view"><span><i class="fa fa-clock-o"></i> <?php echo $newVideo['duration']; ?></span> <span><i class="fa fa-eye"></i> <?php echo $newVideo['viewCount']; ?></span></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                                        <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
-                                            <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/2_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            <div class="hour">1:5:30</div>
-                                            <div class="title">
-                                                <a href="#">
-                                                    <span class="text-wrap">
-                                                        <span class="text">Phở đặc biệt: Lạc giữa Sài Gòn</span>
-                                                        <span class="clock-view"><span><i class="fa fa-clock-o"></i> 01:20</span> <span><i class="fa fa-eye"></i> 158,134</span></span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <?php } else{?>
+                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                                                    <div class="item-main cover" style="background-image: url(<?php echo $newVideo['image'];?> )">
+                                                        <a href="<?php echo $newVideo['actLink']; ?>"><img class="img-responsive" src="<?php echo $newVideo['image']; ?>" alt="<php echo $newVideo['name']; ?>"/></a>
+                                                        
+                                                        <div class="title">
+                                                            <a href="<?php echo $newVideo['actLink']; ?>">
+                                                                <span class="text-wrap">
+                                                                    <span class="text"><?php echo $newVideo['name']; ?></span>
+                                                                    <span class="clock-view"><span><i class="fa fa-clock-o"></i> <?php echo $newVideo['duration']; ?></span> <span><i class="fa fa-eye"></i> <?php echo $newVideo['viewCount']; ?></span></span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                <?php } $i++; } ?>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -410,143 +171,19 @@
                                 </div>
                                 <div class="col-xs-10 col-sm-8 col-md-9 col-lg-10 hidden-xs">
                                     <ul class="catalog-list">
-                                        <li><a href="#">Xem nhiều nhất</a></li>
-                                        <li><a href="#">Show Việt Nam</a></li>
-                                        <li><a href="#">Show Âu - Mỹ</a></li>
-                                        <li><a href="#">Show Hàn Quốc</a></li>
-                                        <li><a href="#">Show Hoa Ngữ</a></li>
-                                        <li><a href="#">Show Thực Tế</a></li>
-                                        <li><a href="#">Show Hài Hước</a></li>
+                                        <li><a href="index.php?route=front/cate&c=tv-show&v=xem-nhieu">Xem nhiều nhất</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-viet-nam">Show Việt Nam</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-au-my">Show Âu - Mỹ</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-han-quoc">Show Hàn Quốc</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-hoa-ngu">Show Hoa Ngữ</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-thuc-te">Show Thực Tế</a></li>
+                                        <li><a href="index.php?route=front/cate&c=show-hai-huoc">Show Hài Hước</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
-                                <div class="list-album row" data-mcs-theme="minimal-dark">
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
                                         <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
@@ -699,56 +336,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
-                                <div class="list-album row" data-mcs-theme="minimal-dark">
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
                                         <div class="item-main cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
@@ -903,7 +491,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -918,7 +506,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -933,7 +521,82 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playlist">
+                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
+                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
+                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
+                                            <div>
+                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
+                                                </p>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1135,131 +798,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
-                                <div class="list-album row" data-mcs-theme="minimal-dark">
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="playlist">
-                                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 img-album">
-                                            <p class="cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/1_b.jpg);">
-                                                <a href="#"><img class="img-responsive" src="<?php echo STATIC_PATH; ?>/public/img/1_b.jpg" alt="Fallout vs Skyrim"/></a>
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 info">
-                                            <div>
-                                                <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
-                                                </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-8 col-sm-15">
                                         <div class="item-main item-lg cover" style="background-image: url(<?php echo STATIC_PATH; ?>/public/img/2_b.jpg);">
@@ -1423,7 +963,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1438,7 +978,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1453,7 +993,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1617,7 +1157,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1632,7 +1172,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1647,7 +1187,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1809,7 +1349,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="BB&amp;BG">BB&amp;BG</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">1 video</span><span class="view-count">1 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1824,7 +1364,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -1839,7 +1379,7 @@
                                             <div>
                                                 <p class="title"><a href="#" title="Lorem ipsum">Lorem ipsum</a>
                                                 </p>
-                                                <p class="meta"><span class="video-count">10 video</span><span class="view-count">86 lượt xem</span>
+                                                <p class="meta"><span><i class="fa fa-eye"></i> 158,134</span>
                                                 </p>
                                             </div>
                                         </div>

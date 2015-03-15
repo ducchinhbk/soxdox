@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700&subset=latin,vietnamese);
+
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 16px;
 }
 .col-xs-15,
@@ -56,6 +57,15 @@ body {
   float: left;
   width: 100%;
 }
+.top-header .logo-nav .menu-nav ul li.active{
+    background: #ECA7A7 !important;
+}
+.top-header .logo-nav .menu-nav ul li a{
+    color: #BB2121 !important;
+}
+.top-header .logo-nav .menu-nav ul li:hover >a{
+    color: #fff !important;
+}
 .top-header .logo-nav .menu-nav ul li a .fa {
   width: 30px;
 }
@@ -101,8 +111,8 @@ body {
   width: 65%;
 }
 .menu-top {
-  background-color: #fff;
-  border-bottom: 3px solid #eee;
+  background-color: #E71D1D;
+  border-bottom: 3px solid #150B0B;
 }
 .main-menu ul {
   padding: 0;
@@ -113,24 +123,25 @@ body {
 }
 .main-menu ul li {
   float: left;
-  padding: 0 15px;
+  padding: 0 14px;
 }
 .main-menu ul li a {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Arial', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #E50000;
-  font-size: 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
   line-height: 40px;
 }
 .main-menu ul li a .fa {
   font-size: 16px;
 }
 .main-menu ul li.active {
-  background-color: #eee;
+  background-color: #BB2121;
 }
 .main-menu ul li:hover {
-  background-color: #f7f7f7;
+  background-color: #BB2121;
 }
 .original {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px;
@@ -147,36 +158,56 @@ body {
   max-height: 421px;
   width: 100%;
 }
+#ajaxloading{
+    height: 268px;
+    display: none;
+}
+#ajaxloading img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 154px;
+}
 .video-top .video-list {
-  max-height: 440px;
+  height: 470px;
   overflow: auto;
   padding: 0;
   margin: 0;
-  list-style: 0;
+  list-style: none;
+  background-color: #222 !important;
 }
 .video-top .video-list li {
   padding: 10px;
   border: 0;
   float: left;
   width: 100%;
+  border-bottom: 1px solid #0D0D0D;
+ cursor: pointer;
 }
 .video-top .video-list li .img {
   float: left;
   width: 115px;
-  height: 60px;
+  height: 85px;
   margin-right: 10px;
+  display: block;
 }
 .video-top .video-list li a {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
   color: #FFF;
   text-decoration: none;
-  line-height: 12px;
+  position: relative;
+  text-transform: lowercase;
+  display: block;
+}
+.video-top .video-list li .text a:first-letter{
+    text-transform: uppercase;
 }
 .video-top .video-list li .time {
   color: #999;
-  font-size: 10px;
+  font-size: 11px;
 }
-.video-top .video-list li:hover {
+.video-top .video-list li:hover, .video-top .video-list li.active {
   background-color: #555;
 }
 .video-top .video-subcribe {
@@ -235,9 +266,9 @@ body {
   margin-top: 10px;
 }
 .video-control .btn {
-  border-color: #fff;
-  background-color: #000;
-  color: #ccc;
+    border-color: #fff;
+    background-color: #000;
+    color: #ccc;
 }
 .video-info {
   background-color: #e2e1e1;
@@ -313,6 +344,19 @@ body {
 .item-main .title a .text {
   display: block;
   width: 100%;
+  color: #fff !important;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: bold;
+  max-height: 2.6em;
+  overflow: hidden;
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.item-main .title a .text-wrap .clock-view{
+    font-size: 12px;
 }
 .item-main .hour {
   position: absolute;
@@ -327,8 +371,7 @@ body {
   height: 330px;
 }
 .item-lg .title a:hover .text-wrap .text {
-  font-size: 25px;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 .img-album {
   padding-right: 0;
@@ -347,27 +390,32 @@ body {
   display: inline-block;
 }
 .playlist .info > div {
-  height: 50px;
-  padding: 5px 0;
+  height: 65px;
+  padding: 0;
 }
-.playlist .info:hover {
-  background-color: #E50000;
-}
-.playlist .info:hover .title a {
-  color: #fff;
-}
-.playlist .info:hover .meta {
-  color: #fff;
-}
+
+
 .playlist .info .title {
   margin: 0;
 }
 .playlist .info .title a {
-  color: #000;
-  text-decoration: none;
+    font-size: 14px;
+    display: block;
+    color: #167ac6;
+    font-family: Arial;
+    font-weight: bold;
+    max-height: 2.6em;
+    overflow: hidden;
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
 }
 .playlist .info .meta {
   font-size: 12px;
+}
+.playlist .info .meta span{
+    color: #777;
 }
 .list-album {
   max-height: 510px;
@@ -379,6 +427,7 @@ body {
   padding: 20px 0;
 }
 .content-title .catalog-title {
+  font-family: Roboto Condensed;
   color: #E50000;
   font-size: 25px;
   text-transform: uppercase;
@@ -394,11 +443,13 @@ body {
   line-height: 25px;
 }
 .content-title .catalog-list li a {
+  font-family: 'Roboto Condensed';
   color: #333;
   text-transform: uppercase;
   padding-right: 15px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: bold;
   white-space: nowrap;
 }
 .content-title .catalog-list li:first-child a {
@@ -446,9 +497,20 @@ body {
 .content-film .title a .text-wrap .text {
   display: block;
   width: 100%;
+  font-size: 14px;
+    color: #167ac6;
+    font-family: Arial;
+    font-weight: bold;
+    max-height: 2.6em;
+    overflow: hidden;
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
 }
 .content-film .title a .text-wrap .clock-view {
   font-size: 12px;
+  color: #777;
 }
 .content-news .item-main {
   margin-bottom: 10px;
@@ -485,11 +547,19 @@ body {
   display: none;
 }
 .content-news .title a {
-  color: #000;
-  text-decoration: none;
+    font-size: 14px;
+    color: #167ac6;
+    font-family: Arial;
+    font-weight: bold;
+    max-height: 2.6em;
+    overflow: hidden;
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
 }
 .content-news .text-wrap {
-  color: #bbbbbb;
+  color: #777;
   margin-bottom: 30px;
   font-size: 12px;
   display: inline-block;
