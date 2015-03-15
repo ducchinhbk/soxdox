@@ -24,6 +24,7 @@
     <script type="text/javascript" src="<?php echo STATIC_PATH; ?>/public/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="<?php echo STATIC_PATH; ?>/public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="<?php echo STATIC_PATH; ?>/public/js/plugin.js"></script>
+    <script type="text/javascript" src="<?php echo STATIC_PATH; ?>/public/js/sd_ajax.js"></script>
     <script type="text/javascript" src="<?php echo STATIC_PATH; ?>/public/lib/jwplayer/jwplayer.js"></script>
 	<script type="text/javascript">jwplayer.key="Tl/cGRKD5+mHxuBA9abJoeWYGnxLoRlF9Xt8VQHJS2nHMmlibF4GZ6FPp4Zk0206";</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -86,7 +87,7 @@
                             </span>
                         </div>
                         <div class="login-upload pull-right">
-                            <button type="button" class="btn btn-default">Tải lên</button>
+                            <button type="button" id="test_ajax" class="btn btn-default">Tải lên</button>
                             <button type="button" class="btn btn-primary login">Đăng nhập</button>
                         </div>
                     </div>
