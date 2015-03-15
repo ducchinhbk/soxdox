@@ -6,9 +6,11 @@ class ModelCatalogCategory extends Model {
 		$this->db->query("INSERT INTO " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW(), date_added = NOW()");
 
 		$category_id = $this->db->getLastId();
-
+        
+        $url = 'danh-muc/'.$this->remove_vietnamese( $data['category_description'][1]['name'].'-'.((int)$category_id + 100) ).'.html';
+        
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "category SET image = '" . $this->db->escape($data['image']) . "' WHERE category_id = '" . (int)$category_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "category SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE category_id = '" . (int)$category_id . "'");
 		}
 
 		foreach ($data['category_description'] as $language_id => $value) {
@@ -45,9 +47,11 @@ class ModelCatalogCategory extends Model {
 		$this->event->trigger('pre.admin.category.edit', $data);
 
 		$this->db->query("UPDATE " . DB_PREFIX . "category SET parent_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', date_modified = NOW() WHERE category_id = '" . (int)$category_id . "'");
-
+        
+        $url = 'danh-muc/'.$this->remove_vietnamese( $data['category_description'][1]['name'].'-'.((int)$category_id + 100) ).'.html';
+       
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "category SET image = '" . $this->db->escape($data['image']) . "' WHERE category_id = '" . (int)$category_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "category SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE category_id = '" . (int)$category_id . "'");
 		}
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "category_description WHERE category_id = '" . (int)$category_id . "'");
@@ -107,29 +111,7 @@ class ModelCatalogCategory extends Model {
 			$this->db->query("REPLACE INTO `" . DB_PREFIX . "category_path` SET category_id = '" . (int)$category_id . "', `path_id` = '" . (int)$category_id . "', level = '" . (int)$level . "'");
 		}
 
-		/*$this->db->query("DELETE FROM " . DB_PREFIX . "category_filter WHERE category_id = '" . (int)$category_id . "'");
-
-		if (isset($data['category_filter'])) {
-			foreach ($data['category_filter'] as $filter_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_filter SET category_id = '" . (int)$category_id . "', filter_id = '" . (int)$filter_id . "'");
-			}
-		}
-
-		$this->db->query("DELETE FROM " . DB_PREFIX . "category_to_store WHERE category_id = '" . (int)$category_id . "'");
-
-		if (isset($data['category_store'])) {
-			foreach ($data['category_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_to_store SET category_id = '" . (int)$category_id . "', store_id = '" . (int)$store_id . "'");
-			}
-		}
-
-		/*$this->db->query("DELETE FROM " . DB_PREFIX . "category_to_layout WHERE category_id = '" . (int)$category_id . "'");
-
-		if (isset($data['category_layout'])) {
-			foreach ($data['category_layout'] as $store_id => $layout_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "category_to_layout SET category_id = '" . (int)$category_id . "', store_id = '" . (int)$store_id . "', layout_id = '" . (int)$layout_id . "'");
-			}
-		}*/
+	
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'category_id=" . (int)$category_id . "'");
 
@@ -302,5 +284,46 @@ class ModelCatalogCategory extends Model {
 		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "category_to_layout WHERE layout_id = '" . (int)$layout_id . "'");
 
 		return $query->row['total'];
-	}	
+	}
+    
+    public function remove_vietnamese($str)
+    {
+    	$accents_arr = array(
+    		"à","á","ạ","ả","ã","â","ầ","ấ","ậ","ẩ","ẫ","ă","ằ","ắ","ặ","ẳ","ẵ",
+            "è","é","ẹ","ẻ","ẽ","ê","ề","ế","ệ","ể","ễ",
+    		"ì","í","ị","ỉ","ĩ",
+    		"ò","ó","ọ","ỏ","õ","ô","ồ","ố","ộ","ổ","ỗ","ơ","ờ","ớ","ợ","ở","ỡ",
+    		"ù","ú","ụ","ủ","ũ","ư","ừ","ứ","ự","ử","ữ",
+    		"ỳ","ý","ỵ","ỷ","ỹ",
+    		"đ",
+    		"À","Á","Ạ","Ả","Ã","Â","Ầ","Ấ","Ậ","Ẩ","Ẫ","Ă","Ằ","Ắ","Ặ","Ẳ","Ẵ",
+    		"È","É","Ẹ","Ẻ","Ẽ","Ê","Ề","Ế","Ệ","Ể","Ễ",
+    		"Ì","Í","Ị","Ỉ","Ĩ",
+    		"Ò","Ó","Ọ","Ỏ","Õ","Ô","Ồ","Ố","Ộ","Ổ","Ỗ","Ơ","Ờ","Ớ","Ợ","Ở","Ỡ",
+    		"Ù","Ú","Ụ","Ủ","Ũ","Ư","Ừ","Ứ","Ự","Ử","Ữ",
+    		"Ỳ","Ý","Ỵ","Ỷ","Ỹ",
+    		"Đ"," ","\"","!","@","#","$","%","^","&","*","(",")",".",",",";","'","[","]","{","}",
+			":","“","”","--",'.','>','<','--','---','‘','’','/','?','~',"|"
+    	);
+     
+    	$no_accents_arr = array(
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d",
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-",
+    		"-","-","-","-",'-','-','-','-','---','-','-','-','','',''
+    	);
+        
+    	return strtolower( str_replace( $accents_arr, $no_accents_arr, $str ) );
+    }	
 }

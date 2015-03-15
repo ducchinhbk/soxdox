@@ -3,11 +3,16 @@ class ModelCatalogVideogroup extends Model {
 	public function addVideogroup($data) {
 		$this->event->trigger('pre.admin.videogroup.add', $data);
         
-		$this->db->query("INSERT INTO " . DB_PREFIX . " videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
+		$this->db->query("INSERT INTO " . DB_PREFIX . " videogroup SET category_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . (int)$data['path'] . "', date_modified = NOW(), date_added = NOW()");
         
 		$videogroup_id = $this->db->getLastId();
         
-
+        $url = 'videogroup/'.$this->remove_vietnamese( $data['category_description'][1]['name'].'-'.((int)$videogroup_id + 100) ).'.html';
+    
+        if (isset($data['image'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . " videogroup SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		}
+        
 		foreach ($data['category_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET videogroup_id = '" . (int)$videogroup_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
@@ -26,11 +31,16 @@ class ModelCatalogVideogroup extends Model {
 	public function editVideogroup($videogroup_id, $data) {
 		$this->event->trigger('pre.admin.videogroup.edit', $data);
         
-		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', image = '" . $this->db->escape($data['image']) . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . $data['path'] . "', date_modified = NOW() WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		$this->db->query("UPDATE " . DB_PREFIX . "videogroup SET category_id = '" . (int)$data['parent_id'] . "', `top` = '" . (isset($data['top']) ? (int)$data['top'] : 0) . "', `column` = '" . (int)$data['column'] . "', sort_order = '" . (int)$data['sort_order'] . "', status = '" . (int)$data['status'] . "', category_name = '" . $data['path'] . "', date_modified = NOW() WHERE videogroup_id = '" . (int)$videogroup_id . "'");
 
-		
+		$url = 'videogroup/'.$this->remove_vietnamese( $data['category_description'][1]['name'].'-'.((int)$videogroup_id + 100) ).'.html';
+        
+        if (isset($data['image'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . " videogroup SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE videogroup_id = '" . (int)$videogroup_id . "'");
+		}
+        
 		$this->db->query("DELETE FROM " . DB_PREFIX . "videogroup_description WHERE videogroup_id = '" . (int)$videogroup_id . "'");
-
+        
 		foreach ($data['category_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "videogroup_description SET videogroup_id = '" . (int)$videogroup_id . "', language_id = '" . (int)$language_id . "', name = '" . $this->db->escape($value['name']) . "', description = '" . $this->db->escape($value['description']) . "', meta_title = '" . $this->db->escape($value['meta_title']) . "', meta_description = '" . $this->db->escape($value['meta_description']) . "', meta_keyword = '" . $this->db->escape($value['meta_keyword']) . "'");
 		}
@@ -144,5 +154,44 @@ class ModelCatalogVideogroup extends Model {
 		return $query->row['total'];
 	}
 	
-		
+	public function remove_vietnamese($str)
+    {
+    	$accents_arr = array(
+    		"à","á","ạ","ả","ã","â","ầ","ấ","ậ","ẩ","ẫ","ă","ằ","ắ","ặ","ẳ","ẵ",
+            "è","é","ẹ","ẻ","ẽ","ê","ề","ế","ệ","ể","ễ",
+    		"ì","í","ị","ỉ","ĩ",
+    		"ò","ó","ọ","ỏ","õ","ô","ồ","ố","ộ","ổ","ỗ","ơ","ờ","ớ","ợ","ở","ỡ",
+    		"ù","ú","ụ","ủ","ũ","ư","ừ","ứ","ự","ử","ữ",
+    		"ỳ","ý","ỵ","ỷ","ỹ",
+    		"đ",
+    		"À","Á","Ạ","Ả","Ã","Â","Ầ","Ấ","Ậ","Ẩ","Ẫ","Ă","Ằ","Ắ","Ặ","Ẳ","Ẵ",
+    		"È","É","Ẹ","Ẻ","Ẽ","Ê","Ề","Ế","Ệ","Ể","Ễ",
+    		"Ì","Í","Ị","Ỉ","Ĩ",
+    		"Ò","Ó","Ọ","Ỏ","Õ","Ô","Ồ","Ố","Ộ","Ổ","Ỗ","Ơ","Ờ","Ớ","Ợ","Ở","Ỡ",
+    		"Ù","Ú","Ụ","Ủ","Ũ","Ư","Ừ","Ứ","Ự","Ử","Ữ",
+    		"Ỳ","Ý","Ỵ","Ỷ","Ỹ",
+    		"Đ"," ","\"","!","@","#","$","%","^","&","*","(",")",".",",",";","'","[","]","{","}",
+			":","“","”","--",'.','>','<','--','---','‘','’','/','?','~',"|"
+    	);
+     
+    	$no_accents_arr = array(
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d",
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-",
+    		"-","-","-","-",'-','-','-','-','---','-','-','-','','',''
+    	);
+        
+    	return strtolower( str_replace( $accents_arr, $no_accents_arr, $str ) );
+    }	
 }

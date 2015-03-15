@@ -6,9 +6,11 @@ class ModelCatalogProduct extends Model {
 		$this->db->query("INSERT INTO " . DB_PREFIX . "product SET title = '" . $this->db->escape($api_data['title']) . "', link = '" . $this->db->escape($request_data['link']) . "',  image = '" . $this->db->escape($api_data['image']) . "', duration = '" . $this->db->escape($api_data['duration']) . "',  viewCount = '" . $this->db->escape($api_data['viewCount']) . "',  likeCount = '" . $this->db->escape($api_data['likeCount']) . "', favoriteCount = '" . $this->db->escape($api_data['favoriteCount']) . "',  date_available = '" . $this->db->escape($request_data['date_available']) . "',  status = '" . (int)$request_data['status'] . "', sort_order = '" . (int)$request_data['sort_order'] . "', date_added = NOW()");
 
 		$product_id = $this->db->getLastId();
-
-		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($api_data['image']) . "' WHERE product_id = '" . (int)$product_id . "'");
+        
+        $url = 'video/'.$this->remove_vietnamese( $data['category_description'][1]['name'].'-'.((int)$product_id + 100) ).'.html';
+		
+        if (isset($data['image'])) {
+			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($api_data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE product_id = '" . (int)$product_id . "'");
 		}
 
 		foreach ($request_data['product_description'] as $language_id => $value) {
@@ -43,10 +45,12 @@ class ModelCatalogProduct extends Model {
 	public function editProduct($product_id, $data) {
 		$this->event->trigger('pre.admin.product.edit', $data);
 
-		$this->db->query("UPDATE " . DB_PREFIX . "product SET link = '" . $this->db->escape($data['link']) . "', date_available = '" . $this->db->escape($data['date_available']) . "', status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
-
+		$this->db->query("UPDATE " . DB_PREFIX . "product SET  link = '" . $this->db->escape($data['link']) . "', date_available = '" . $this->db->escape($data['date_available']) . "', status = '" . (int)$data['status'] . "', sort_order = '" . (int)$data['sort_order'] . "', date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
+        
+        $url = 'video/'.$this->remove_vietnamese( $data['product_description'][1]['name'].'-'.((int)$product_id + 100) ).'.html';
+        
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($data['image']) . "' WHERE product_id = '" . (int)$product_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE product_id = '" . (int)$product_id . "'");
 		}
 
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
@@ -457,4 +461,57 @@ class ModelCatalogProduct extends Model {
 
 		return $query->row['total'];
 	}
+    
+    public function duration($ytDuration) {
+    
+        $di = new DateInterval($ytDuration);
+        $string = '';
+    
+        if ($di->h > 0) {
+          $string .= $di->h.':';
+        }
+    
+        return $string.$di->i.':'.$di->s;
+    }
+	
+	public function remove_vietnamese($str)
+    {
+    	$accents_arr = array(
+    		"à","á","ạ","ả","ã","â","ầ","ấ","ậ","ẩ","ẫ","ă","ằ","ắ","ặ","ẳ","ẵ",
+            "è","é","ẹ","ẻ","ẽ","ê","ề","ế","ệ","ể","ễ",
+    		"ì","í","ị","ỉ","ĩ",
+    		"ò","ó","ọ","ỏ","õ","ô","ồ","ố","ộ","ổ","ỗ","ơ","ờ","ớ","ợ","ở","ỡ",
+    		"ù","ú","ụ","ủ","ũ","ư","ừ","ứ","ự","ử","ữ",
+    		"ỳ","ý","ỵ","ỷ","ỹ",
+    		"đ",
+    		"À","Á","Ạ","Ả","Ã","Â","Ầ","Ấ","Ậ","Ẩ","Ẫ","Ă","Ằ","Ắ","Ặ","Ẳ","Ẵ",
+    		"È","É","Ẹ","Ẻ","Ẽ","Ê","Ề","Ế","Ệ","Ể","Ễ",
+    		"Ì","Í","Ị","Ỉ","Ĩ",
+    		"Ò","Ó","Ọ","Ỏ","Õ","Ô","Ồ","Ố","Ộ","Ổ","Ỗ","Ơ","Ờ","Ớ","Ợ","Ở","Ỡ",
+    		"Ù","Ú","Ụ","Ủ","Ũ","Ư","Ừ","Ứ","Ự","Ử","Ữ",
+    		"Ỳ","Ý","Ỵ","Ỷ","Ỹ",
+    		"Đ"," ","\"","!","@","#","$","%","^","&","*","(",")",".",",",";","'","[","]","{","}",
+			":","“","”","--",'.','>','<','--','---','‘','’','/','?','~',"|"
+    	);
+     
+    	$no_accents_arr = array(
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d",
+    		"a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a","a",
+    		"e","e","e","e","e","e","e","e","e","e","e",
+    		"i","i","i","i","i",
+    		"o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o","o",
+    		"u","u","u","u","u","u","u","u","u","u","u",
+    		"y","y","y","y","y",
+    		"d","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-",
+    		"-","-","-","-",'-','-','-','-','---','-','-','-','','',''
+    	);
+        
+    	return strtolower( str_replace( $accents_arr, $no_accents_arr, $str ) );
+    }
 }
