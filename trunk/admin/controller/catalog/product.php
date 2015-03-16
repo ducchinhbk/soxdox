@@ -42,6 +42,14 @@ class ControllerCatalogProduct extends Controller {
             curl_close($ch);
             $result = json_decode($result, true);
             
+            if( empty( $result['items'][0]['snippet']['thumbnails']['high']['url'] ) )
+            {
+                $this->session->data['error_warning'] = 'Lỗi video không truy cập được!';
+                 
+                $this->response->redirect($this->url->link('catalog/product', 'token=' . $this->session->data['token'] . $url, 'SSL'));
+               
+            }
+            
             //Get date from API
             
             $data['title'] = $result['items'][0]['snippet']['title'];
@@ -60,7 +68,7 @@ class ControllerCatalogProduct extends Controller {
             }
             else{
                 
-                $image = $this->model_tool_image->download( $result['items'][0]['snippet']['thumbnails']['high']['url'] );
+                $image = $this->model_tool_image->download( $result['items'][0]['snippet']['thumbnails']['medium']['url'] );
                 
                 $data['image'] = $image ;
                 
@@ -106,7 +114,7 @@ class ControllerCatalogProduct extends Controller {
 		$this->load->model('catalog/product');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-		  
+		   
 			$this->model_catalog_product->editProduct($this->request->get['product_id'], $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
@@ -357,7 +365,15 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['error_warning'] = '';
 		}
+        
+        if (isset($this->session->data['error_warning'])) {
+			$data['error_warning'] = $this->session->data['error_warning'];
 
+			unset($this->session->data['error_warning']);
+		} else {
+			$data['error_warning'] = '';
+		}
+        
 		if (isset($this->session->data['success'])) {
 			$data['success'] = $this->session->data['success'];
 
