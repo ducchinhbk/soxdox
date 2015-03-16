@@ -52,7 +52,7 @@ class ModelCatalogProduct extends Model {
 		if (isset($data['image'])) {
 			$this->db->query("UPDATE " . DB_PREFIX . "product SET image = '" . $this->db->escape($data['image']) . "', url = '" . $this->db->escape($url) . "' WHERE product_id = '" . (int)$product_id . "'");
 		}
-
+        
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "'");
 
 		foreach ($data['product_description'] as $language_id => $value) {
